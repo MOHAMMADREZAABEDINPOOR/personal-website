@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "title": "محمدرضا عابدین‌پور - رزومه",
+    "description": "رزومه محمدرضا عابدین‌پور - دانش‌آموز پایه دوازدهم و علاقه‌مند به هوش مصنوعی و برنامه‌نویسی",
+    "keywords": "رزومه, برنامه‌نویسی, هوش مصنوعی, کارآموزی, محمدرضا عابدین‌پور",
+    "author": "محمدرضا عابدین‌پور"
+  },
+  "nav": {
+    "home": "خانه",
+    "about": "درباره",
+    "skills": "مهارت‌ها",
+    "projects": "پروژه‌ها",
+    "achievements": "افتخارات",
+    "education": "تحصیلات",
+    "contact": "تماس"
+  },
+  "hero": {
+    "badge": "کاوشگر هوش مصنوعی و وب",
+    "name": "محمدرضا عابدین‌پور",
+    "title": "دانش‌آموز پایه دوازدهم | علاقه‌مند به هوش مصنوعی و برنامه‌نویسی | جویای کارآموزی",
+    "description": "دانش‌آموز کنجکاو با علاقه به AI و وب؛ من از سال 2021 برنامه‌نویسی می‌کنم؛ تمرکز روی پروژه‌های کوچک کاربردی و یادگیری مستمر.",
+    "contact": "تماس با من",
+    "download": "دانلود CV",
+    "metric": {
+      "experience": "سال تجربه برنامه‌نویسی",
+      "projects": "پروژه تکمیل شده",
+      "certificates": "گواهینامه بین‌المللی"
+    }
+  },
+  "about": {
+    "title": "درباره من",
+    "heading": "درباره من",
+    "text": {
+      "intro": "من محمدرضا عابدین‌پور، دانش‌آموز پایه دوازدهم هستم که به دنیای تکنولوژی و برنامه‌نویسی علاقه‌مندم. از کودکی کنجکاو یادگیری چیزهای جدید بودم و این کنجکاوی مرا به سمت برنامه‌نویسی و هوش مصنوعی کشانده است.",
+      "experience": "من از سال 2021 برنامه‌نویسی می‌کنم و در این مدت تجربه‌های ارزشمندی در کار تیمی و حل مسئله کسب کرده‌ام. پروژه‌هایم معمولاً بر روی ایجاد راه‌حل‌های کاربردی و یادگیری تکنولوژی‌های جدید متمرکز است."
+    },
+    "stats": {
+      "heading": "آمار و دستاوردها",
+      "experience": "سال تجربه برنامه‌نویسی",
+      "projects": "پروژه تکمیل شده",
+      "certificates": "گواهینامه بین‌المللی"
+    },
+    "ethics": {
+      "heading": "اخلاقیات",
+      "learning": {
+        "title": "یادگیری مستمر",
+        "description": "همیشه در حال یادگیری تکنولوژی‌های جدید"
+      },
+      "teamwork": {
+        "title": "کار تیمی",
+        "description": "تجربه همکاری در پروژه‌های گروهی"
+      },
+      "innovation": {
+        "title": "تمرکز بر نوآوری",
+        "description": "ایجاد راه‌حل‌های خلاقانه و کاربردی"
+      }
+    }
+  },
+  "skills": {
+    "title": "مهارت‌ها",
+    "heading": "مهارت‌ها",
+    "categories": {
+      "core": "Core",
+      "tools": "Tools & Platforms",
+      "creative": "Creative",
+      "devops": "Deployment/Ops",
+      "learning": "Learning",
+      "familiar": "Familiar"
+    },
+    "items": {
+      "aiDevelopment": {
+        "name": "AI-Assisted Development",
+        "level": "Strong",
+        "description": "Cursor/Copilot; review, tests, docs"
+      },
+      "telegramBots": {
+        "name": "Telegram Bots & Automation",
+        "level": "Strong",
+        "description": "agents, webhooks, scheduling"
+      },
+      "python": {
+        "name": "Python",
+        "level": "Intermediate",
+        "description": "NLP chatbot, scraping, automation"
+      },
+      "web": {
+        "name": "Web (HTML, CSS, JS)",
+        "level": "Intermediate",
+        "description": "personal site, school blog, deploy"
+      },
+      "django": {
+        "name": "Django",
+        "level": "Beginner–Intermediate",
+        "description": "CRUD + DB integration"
+      },
+      "sql": {
+        "name": "SQL/MySQL",
+        "level": "Intermediate",
+        "description": "schema design, queries"
+      },
+      "git": {
+        "name": "Git & GitHub",
+        "level": "Proficient",
+        "description": "branches/PRs"
+      },
+      "scraping": {
+        "name": "Web Scraping",
+        "level": "Intermediate",
+        "description": "data collection"
+      },
+      "promptEngineering": {
+        "name": "Prompt Engineering",
+        "level": "Intermediate",
+        "description": "chatbot/agent prompts"
+      },
+      "arduino": {
+        "name": "Arduino",
+        "level": "Intermediate",
+        "description": "LM35 & Ultrasonic"
+      },
+      "photoshop": {
+        "name": "Photoshop (Retouch)",
+        "level": "Intermediate",
+        "description": "studio workflow, ID-style"
+      },
+      "capcut": {
+        "name": "CapCut",
+        "level": "Intermediate",
+        "description": "YouTube edits"
+      },
+      "deployment": {
+        "name": "Deploy on shared host/VPS",
+        "level": "Intermediate",
+        "description": "domain, SSL, Telegram webhooks"
+      },
+      "flutter": {
+        "name": "Flutter (apps)",
+        "level": "Beginner",
+        "description": "mobile app development"
+      },
+      "react": {
+        "name": "Tailwind/React",
+        "level": "Beginner",
+        "description": "modern web development"
+      },
+      "cpp": {
+        "name": "C, C++",
+        "level": "Familiar",
+        "description": "system programming basics"
+      },
+      "office": {
+        "name": "Microsoft 365",
+        "level": "Familiar",
+        "description": "office productivity suite"
+      }
+    }
+  },
+  "projects": {
+    "title": "پروژه‌ها",
+    "heading": "پروژه‌ها",
+    "details_button": "جزئیات",
+    "coming_soon": "بزودی منتشر می‌شود",
+    "modal": {
+      "about": "درباره پروژه",
+      "features": "ویژگی‌های کلیدی:",
+      "technologies": "مهارت‌ها و تکنولوژی‌ها:",
+      "links": "لینک‌ها و منابع:"
+    },
+    "cards": {
+      "chatbot": {
+        "title": "وب‌اپ چت‌بات هوشمند",
+        "description": "پروژهٔ کامل چت‌بات با احراز هویت، ایمیل‌های تراکنشی و پنل ادمین اختصاصی. پاسخ‌ها از طریق Google Gemini 2.5 Flash API تولید می‌شوند."
+      },
+      "blog": {
+        "title": "پلتفرم وبلاگ مدرسه",
+        "description": "سایت وبلاگ برای معاون آموزشی مدرسه با پنل ادمین، احراز هویت کامل و ایمیل‌های رویدادی. انتشار پست با متن/عکس/آهنگ و کامنت‌گذاری پیشرفته."
+      },
+      "telegram-agent": {
+        "title": "ایجنت تلگرام با داشبورد وب",
+        "description": "ایجنت تلگرامی که پیام‌ها را پردازش و پاسخ‌های شخصی‌سازی‌شده ارائه می‌کند؛ مناسب فروشگاه‌های آنلاین و تیم‌های پشتیبانی. همراه با داشبورد وب برای نظارت و مدیریت."
+      }
+    },
+    "details": {
+      "chatbot": {
+        "title": "وب‌اپ چت‌بات هوشمند",
+        "description": "پروژهٔ کامل چت‌بات با احراز هویت، ایمیل‌های تراکنشی و پنل ادمین اختصاصی. پاسخ‌ها از طریق Google Gemini 2.5 Flash API تولید می‌شوند. این پروژه شامل سیستم مدیریت کاربران، لاگ‌گیری کامل و رابط کاربری مدرن است.",
+        "features": [
+          "ثبت‌نام/ورود، تغییر رمز عبور و بازیابی (Reset Password)",
+          "ارسال ایمیل خودکار برای ثبت‌نام/ورود/تغییر رمز و سایر رویدادها",
+          "پنل ادمین اختصاصی برای مدیریت کاربران و لاگ‌ها",
+          "رابط کاربری بهینه بر مبنای اصول UI/UX",
+          "پاسخ‌های هوشمند با AI",
+          "سیستم لاگ‌گیری کامل"
+        ],
+        "tech": ["HTML", "CSS", "JavaScript", "Django", "SQL", "Google Gemini"],
+        "links": {
+          "github": "",
+          "live": "",
+          "demo": ""
+        }
+      },
+      "blog": {
+        "title": "پلتفرم وبلاگ مدرسه",
+        "description": "سایت وبلاگ برای معاون آموزشی مدرسه با پنل ادمین، احراز هویت کامل و ایمیل‌های رویدادی. انتشار پست با متن/عکس/آهنگ و کامنت‌گذاری پیشرفته. شامل سیستم مدیریت محتوا و گزارش‌گیری کامل.",
+        "features": [
+          "ثبت‌نام/ورود، ریست و تغییر پسورد + ارسال ایمیل برای هر عملیات",
+          "ایجاد پست با متن، تصویر و فایل صوتی",
+          "کامنت‌گذاری پیشرفته: ویرایش، حذف، پاسخ تو در تو (Threaded)",
+          "پنل ادمین جهت مدیریت پست‌ها و کاربران",
+          "سیستم گزارش‌گیری پیشرفته",
+          "مدیریت محتوای چندرسانه‌ای"
+        ],
+        "tech": ["HTML", "CSS", "JavaScript", "Django", "SQL", "UI/UX"],
+        "links": {
+          "github": "",
+          "live": "",
+          "demo": ""
+        }
+      },
+      "telegram-agent": {
+        "title": "ایجنت تلگرام با داشبورد وب",
+        "description": "ایجنت تلگرامی که پیام‌ها را پردازش و پاسخ‌های شخصی‌سازی‌شده ارائه می‌کند؛ مناسب فروشگاه‌های آنلاین و تیم‌های پشتیبانی. همراه با داشبورد وب برای نظارت و مدیریت. شامل سیستم آنالیز و گزارش‌گیری.",
+        "features": [
+          "شخصی‌سازی رفتار: مشتری قدیمی (تعامل صمیمی‌تر) vs مشتری جدید (تعامل معمولی)",
+          "پاسخ‌دهی بسیار سریع (Webhook) و مشاهدهٔ گفتگوها در پنل",
+          "بلاک/آن‌بلاک کاربر و پایش رفتار پایه",
+          "پنل ادمین وب برای مدیریت کاربران و نظارت چت‌ها",
+          "سیستم آنالیز مکالمات",
+          "پشتیبانی چندزبانه"
+        ],
+        "tech": ["Python", "Telegram Bot API", "Google Gemini", "HTML", "CSS", "MongoDB"],
+        "links": {
+          "github": "",
+          "live": "",
+          "demo": ""
+        }
+      }
+    },
+    "items": [
+      {
+        "title": "چت‌بات مینی",
+        "summary": "یک چت‌بات ساده با قابلیت پردازش زبان طبیعی برای پاسخ‌گویی به سوالات کاربران",
+        "tech": ["Python", "NLP"],
+        "ctaLabel": "GitHub"
+      },
+      {
+        "title": "وب‌سایت شخصی",
+        "summary": "رزومه آنلاین ریسپانسیو با طراحی مدرن و قابلیت تم تاریک",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "ctaLabel": "Live Demo"
+      },
+      {
+        "title": "ربات دنبال‌کننده خط",
+        "summary": "ربات هوشمند با قابلیت تشخیص و دنبال کردن خطوط رنگی با استفاده از سنسورهای مادون قرمز",
+        "tech": ["Arduino", "C++", "Electronics"],
+        "ctaLabel": "Video"
+      }
+    ]
+  },
+  "achievements": {
+    "title": "افتخارات",
+    "heading": "افتخارات و گواهینامه‌ها",
+    "sharif": {
+      "title": "دانشگاه صنعتی شریف",
+      "ranking": "رتبه 3 در ایران و 548 در جهان",
+      "description": "من جزو 3 دانشجوی برتر دوره‌های دانشگاه صنعتی شریف بودم",
+      "rank_iran": "رتبه در ایران",
+      "rank_global": "رتبه در جهان"
+    },
+    "certificate": {
+      "details": "جزئیات"
+    },
+    "items": [
+      {
+        "title": "رتبه برتر منطقه",
+        "description": "مقام اول در مسابقات علمی منطقه",
+        "year": "2023"
+      },
+      {
+        "title": "شرکت در المپیاد کامپیوتر",
+        "description": "شرکت در مرحله استانی المپیاد کامپیوتر",
+        "year": "2023"
+      },
+      {
+        "title": "مقام تیم رباتیک مدرسه",
+        "description": "مقام دوم در مسابقات رباتیک دانش‌آموزی",
+        "year": "2022"
+      }
+    ]
+  },
+  "education": {
+    "title": "تحصیلات",
+    "heading": "تحصیلات",
+    "highschool": {
+      "title": "دبیرستان دکتر علی‌شریعتی",
+      "subtitle": "دانش‌آموز پایه دوازدهم",
+      "description": "از سال 2021 تا کنون در رشته ریاضی و فیزیک"
+    },
+    "school": "دبیرستان دکتر علی‌شریعتی",
+    "period": "2021 - 2024",
+    "grade": "پایه دهم تا دوازدهم - رشته ریاضی و فیزیک",
+    "details": [
+      "عضو فعال تیم رباتیک",
+      "شرکت در مسابقات علمی"
+    ]
+  },
+  "contact": {
+    "title": "تماس با من",
+    "heading": "ارتباط با من",
+    "email": {
+      "title": "ایمیل"
+    },
+    "phone": {
+      "title": "تلفن"
+    },
+    "telegram": {
+      "title": "تلگرام",
+      "label": "تلگرام"
+    },
+    "whatsapp": {
+      "title": "واتساپ",
+      "label": "واتساپ"
+    },
+    "youtube": {
+      "title": "یوتیوب",
+      "label": "یوتیوب"
+    },
+    "location": {
+      "title": "آدرس",
+      "address": "تهران، ایران"
+    },
+    "subtitle": "بیایید با هم صحبت کنیم",
+    "description": "برای کارآموزی، همکاری پروژه‌ای یا هر سوال دیگری، خوشحال می‌شوم با شما در ارتباط باشم.",
+    "form": {
+      "name": "نام",
+      "email": "ایمیل",
+      "subject": "موضوع",
+      "message": "پیام",
+      "submit": "ارسال پیام"
+    },
+    "success": "پیام شما با موفقیت ارسال شد!",
+    "error": "خطا در ارسال پیام. لطفاً دوباره تلاش کنید."
+  },
+  "loading": {
+    "title": "محمدرضا عابدین‌پور",
+    "subtitle": "در حال بارگذاری پورتفولیو...",
+    "steps": {
+      "initializing": "در حال راه‌اندازی...",
+      "loading_assets": "در حال بارگذاری فایل‌ها...",
+      "preparing_content": "در حال آماده‌سازی محتوا...",
+      "finalizing": "در حال تکمیل...",
+      "ready": "آماده!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 محمدرضا عابدین‌پور. تمام حقوق محفوظ است.",
+    "sourceCode": "سورس کد"
+  },
+  "aria": {
+    "nav": "منوی اصلی",
+    "home": "برو به ابتدای صفحه",
+    "lang": "تغییر زبان",
+    "theme": "تغییر تم",
+    "menu": "باز/بستن منو",
+    "back": "بازگشت به بالا",
+    "email": "ارسال ایمیل",
+    "github": "مشاهده پروفایل GitHub",
+    "linkedin": "مشاهده پروفایل LinkedIn"
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "title": "Mohammadreza Abedinpoor - Lebenslauf",
+    "description": "Lebenslauf von Mohammadreza Abedinpoor - 12. Klässler mit Leidenschaft für KI und Programmierung",
+    "keywords": "Lebenslauf, Programmierung, künstliche Intelligenz, Praktikum, Mohammadreza Abedinpoor",
+    "author": "Mohammadreza Abedinpoor"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "achievements": "Erfolge",
+    "education": "Bildung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "KI & Web Entdecker",
+    "name": "Mohammadreza Abedinpoor",
+    "title": "12. Klässler | KI & Programmierung Enthusiast | Offen für Praktika",
+    "description": "Neugieriger Schüler mit Leidenschaft für KI und Webentwicklung; programmiere seit 2021; fokussiert auf praktische kleine Projekte und kontinuierliches Lernen.",
+    "contact": "Kontaktieren",
+    "download": "CV herunterladen",
+    "metric": {
+      "experience": "Jahre Erfahrung",
+      "projects": "Praktische Projekte",
+      "certificates": "Internationale Zertifikate"
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "heading": "Über mich",
+    "text": {
+      "intro": "Ich bin Mohammadreza Abedinpoor, ein 12. Klässler mit Leidenschaft für Technologie und Programmierung. Seit meiner Kindheit bin ich neugierig darauf, neue Dinge zu lernen, und diese Neugier hat mich zur Programmierung und künstlichen Intelligenz geführt.",
+      "experience": "Ich programmiere seit 2021 und habe in dieser Zeit wertvolle Erfahrungen in Teamarbeit und Problemlösung gesammelt. Meine Projekte konzentrieren sich typischerweise auf die Erstellung praktischer Lösungen und das Lernen neuer Technologien."
+    },
+    "stats": {
+      "heading": "Statistiken & Erfolge",
+      "experience": "Jahre Programmiererfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "certificates": "Internationale Zertifikate"
+    },
+    "ethics": {
+      "heading": "Ethik & Werte",
+      "learning": {
+        "title": "Kontinuierliches Lernen",
+        "description": "Immer neue Technologien lernen"
+      },
+      "teamwork": {
+        "title": "Teamarbeit",
+        "description": "Erfahrung in kollaborativen Projekten"
+      },
+      "innovation": {
+        "title": "Innovationsfokus",
+        "description": "Kreative und praktische Lösungen schaffen"
+      }
+    }
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "heading": "Fähigkeiten",
+    "categories": {
+      "core": "Kern",
+      "tools": "Tools & Plattformen",
+      "creative": "Kreativ",
+      "devops": "Deployment/Ops",
+      "learning": "Lernend",
+      "familiar": "Vertraut"
+    },
+    "items": {
+      "aiDevelopment": {
+        "name": "KI-unterstützte Entwicklung",
+        "level": "Stark",
+        "description": "Cursor/Copilot; Review, Tests, Dokumentation"
+      },
+      "telegramBots": {
+        "name": "Telegram Bots & Automatisierung",
+        "level": "Stark",
+        "description": "Agenten, Webhooks, Planung"
+      },
+      "python": {
+        "name": "Python",
+        "level": "Mittel",
+        "description": "NLP Chatbot, Scraping, Automatisierung"
+      },
+      "web": {
+        "name": "Web (HTML, CSS, JS)",
+        "level": "Mittel",
+        "description": "persönliche Website, Schulblog, Deployment"
+      },
+      "django": {
+        "name": "Django",
+        "level": "Anfänger–Mittel",
+        "description": "CRUD + Datenbankintegration"
+      },
+      "sql": {
+        "name": "SQL/MySQL",
+        "level": "Mittel",
+        "description": "Schema-Design, Abfragen"
+      },
+      "git": {
+        "name": "Git & GitHub",
+        "level": "Kompetent",
+        "description": "Branches/PRs"
+      },
+      "scraping": {
+        "name": "Web Scraping",
+        "level": "Mittel",
+        "description": "Datensammlung"
+      },
+      "promptEngineering": {
+        "name": "Prompt-Engineering",
+        "level": "Mittel",
+        "description": "Chatbot/Agent Prompts"
+      },
+      "arduino": {
+        "name": "Arduino",
+        "level": "Mittel",
+        "description": "LM35 & Ultraschall"
+      },
+      "photoshop": {
+        "name": "Photoshop (Retusche)",
+        "level": "Mittel",
+        "description": "Studio-Workflow, ID-Stil"
+      },
+      "capcut": {
+        "name": "CapCut",
+        "level": "Mittel",
+        "description": "YouTube-Bearbeitungen"
+      },
+      "deployment": {
+        "name": "Deployment auf Shared Host/VPS",
+        "level": "Mittel",
+        "description": "Domain, SSL, Telegram Webhooks"
+      },
+      "flutter": {
+        "name": "Flutter (Apps)",
+        "level": "Anfänger",
+        "description": "Mobile App-Entwicklung"
+      },
+      "react": {
+        "name": "Tailwind/React",
+        "level": "Anfänger",
+        "description": "moderne Webentwicklung"
+      },
+      "cpp": {
+        "name": "C, C++",
+        "level": "Vertraut",
+        "description": "Systemprogrammierung Grundlagen"
+      },
+      "office": {
+        "name": "Microsoft 365",
+        "level": "Vertraut",
+        "description": "Büro-Produktivitätssuite"
+      }
+    }
+  },
+    "projects": {
+    "title": "Projekte",
+    "heading": "Projekte",
+    "details_button": "Details",
+    "coming_soon": "Bald verfügbar",
+    "modal": {
+      "about": "Über das Projekt",
+      "features": "Hauptfunktionen:",
+      "technologies": "Fähigkeiten und Technologien:",
+      "links": "Links und Ressourcen:"
+    },
+    "cards": {
+      "chatbot": {
+        "title": "Intelligente Chatbot Web-App",
+        "description": "Vollständiges Chatbot-Projekt mit Authentifizierung, Transaktions-E-Mails und dediziertem Admin-Panel. Antworten werden über Google Gemini 2.5 Flash API generiert."
+      },
+      "blog": {
+        "title": "Schul-Blog-Plattform",
+        "description": "Blog-Website für Schulvizerektor mit Admin-Panel, vollständiger Authentifizierung und Event-E-Mails. Post-Veröffentlichung mit Text/Bild/Audio und erweiterter Kommentarfunktion."
+      },
+      "telegram-agent": {
+        "title": "Telegram-Agent mit Web-Dashboard",
+        "description": "Telegram-Agent, der Nachrichten verarbeitet und personalisierte Antworten liefert; geeignet für Online-Shops und Support-Teams. Kommt mit Web-Dashboard für Überwachung und Verwaltung."
+      }
+    },
+    "details": {
+      "chatbot": {
+        "title": "Intelligente Chatbot Web-App",
+        "description": "Vollständiges Chatbot-Projekt mit Authentifizierung, Transaktions-E-Mails und dediziertem Admin-Panel. Antworten werden über Google Gemini 2.5 Flash API generiert. Dieses Projekt umfasst ein Benutzerverwaltungssystem, vollständige Protokollierung und moderne Benutzeroberfläche.",
+        "features": [
+          "Registrierung/Anmeldung, Passwort ändern und Wiederherstellung (Passwort zurücksetzen)",
+          "Automatische E-Mail-Versendung für Registrierung/Anmeldung/Passwort-Änderung und andere Ereignisse",
+          "Dediziertes Admin-Panel für Benutzer- und Protokollverwaltung",
+          "Optimierte Benutzeroberfläche basierend auf UI/UX-Prinzipien",
+          "Intelligente KI-Antworten",
+          "Vollständiges Protokollierungssystem"
+        ],
+        "tech": ["HTML", "CSS", "JavaScript", "Django", "SQL", "Google Gemini"],
+        "links": {
+          "github": "",
+          "live": "",
+          "demo": ""
+        }
+      },
+      "blog": {
+        "title": "Schul-Blog-Plattform",
+        "description": "Blog-Website für Schulvizerektor mit Admin-Panel, vollständiger Authentifizierung und Event-E-Mails. Post-Veröffentlichung mit Text/Bild/Audio und erweiterter Kommentarfunktion. Umfasst Content-Management-System und vollständige Berichterstattung.",
+        "features": [
+          "Registrierung/Anmeldung, Reset und Passwort-Änderung + E-Mail-Versendung für jede Operation",
+          "Erstellen von Posts mit Text, Bild und Audiodateien",
+          "Erweiterte Kommentierung: Bearbeiten, Löschen, verschachtelte Antworten (Threaded)",
+          "Admin-Panel zur Verwaltung von Posts und Benutzern",
+          "Erweitertes Berichtssystem",
+          "Multimedia-Content-Management"
+        ],
+        "tech": ["HTML", "CSS", "JavaScript", "Django", "SQL", "UI/UX"],
+        "links": {
+          "github": "",
+          "live": "",
+          "demo": ""
+        }
+      },
+      "telegram-agent": {
+        "title": "Telegram-Agent mit Web-Dashboard",
+        "description": "Telegram-Agent, der Nachrichten verarbeitet und personalisierte Antworten liefert; geeignet für Online-Shops und Support-Teams. Kommt mit Web-Dashboard für Überwachung und Verwaltung. Umfasst Gesprächsanalyse und Berichtssystem.",
+        "features": [
+          "Verhaltensanpassung: Stammkunde (intimere Interaktion) vs. Neukunde (normale Interaktion)",
+          "Sehr schnelle Antwort (Webhook) und Gesprächsbetrachtung im Panel",
+          "Benutzer blockieren/entblocken und grundlegende Verhaltensüberwachung",
+          "Web-Admin-Panel für Benutzerverwaltung und Chat-Überwachung",
+          "Gesprächsanalysesystem",
+          "Mehrsprachige Unterstützung"
+        ],
+        "tech": ["Python", "Telegram Bot API", "Google Gemini", "HTML", "CSS", "MongoDB"],
+        "links": {
+          "github": "",
+          "live": "",
+          "demo": ""
+        }
+      }
+    },
+    "items": [
+      {
+        "title": "Mini Chatbot",
+        "summary": "Ein einfacher Chatbot mit natürlicher Sprachverarbeitung zur Beantwortung von Benutzerfragen",
+        "tech": ["Python", "NLP"],
+        "ctaLabel": "GitHub"
+      },
+      {
+        "title": "Persönliche Website",
+        "summary": "Responsive Online-Lebenslauf mit modernem Design und Dunkelmodus",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "ctaLabel": "Live Demo"
+      },
+      {
+        "title": "Linienfolger-Roboter",
+        "summary": "Intelligenter Roboter, der farbige Linien mit Infrarotsensoren erkennen und verfolgen kann",
+        "tech": ["Arduino", "C++", "Elektronik"],
+        "ctaLabel": "Video"
+      }
+    ]
+    },
+    "achievements": {
+    "title": "Erfolge",
+    "heading": "Erfolge & Zertifikate",
+    "sharif": {
+      "title": "Sharif Technische Universität",
+      "ranking": "Rang 3 im Iran und 548 weltweit",
+      "description": "Ich war einer der Top 3 Studenten in Sharif Universitätskursen",
+      "rank_iran": "Rang im Iran",
+      "rank_global": "Globaler Rang"
+    },
+    "certificate": {
+      "details": "Details"
+    },
+    "items": [
+      {
+        "title": "Regionale Spitzenplatzierung",
+        "description": "Erster Platz bei regionalen akademischen Wettbewerben",
+        "year": "2023"
+      },
+      {
+        "title": "Teilnahme an Informatik-Olympiade",
+        "description": "Teilnahme an provinzieller Informatik-Olympiade",
+        "year": "2023"
+      },
+      {
+        "title": "Schul-Robotik-Team Erfolg",
+        "description": "Zweiter Platz bei Schüler-Robotik-Wettbewerben",
+        "year": "2022"
+      }
+    ]
+  },
+  "education": {
+    "title": "Bildung",
+    "heading": "Bildung",
+    "highschool": {
+      "title": "Dr. Ali Shariati Gymnasium",
+      "subtitle": "12. Klässler",
+      "description": "Von 2021 bis heute in Mathematik und Physik"
+    },
+    "school": "Dr. Ali Shariati Gymnasium",
+    "period": "2021 - 2024",
+    "grade": "10. bis 12. Klasse - Mathematik und Physik",
+    "details": [
+      "Aktives Mitglied des Robotik-Teams",
+      "Teilnehmer an akademischen Wettbewerben"
+    ]
+  },
+  "contact": {
+    "title": "Kontaktieren",
+    "heading": "Kontaktieren",
+    "email": {
+      "title": "E-Mail"
+    },
+    "phone": {
+      "title": "Telefon"
+    },
+    "location": {
+      "title": "Adresse",
+      "address": "Teheran, Iran"
+    },
+    "subtitle": "Lass uns reden",
+    "description": "Für Praktika, Projektkooperationen oder andere Fragen würde ich mich freuen, mit dir in Kontakt zu treten.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Nachricht senden"
+    },
+    "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "error": "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut."
+  },
+  "loading": {
+    "title": "Mohammadreza Abedinpour",
+    "subtitle": "Portfolio wird geladen...",
+    "steps": {
+      "initializing": "Initialisierung...",
+      "loading_assets": "Assets werden geladen...",
+      "preparing_content": "Inhalt wird vorbereitet...",
+      "finalizing": "Abschließung...",
+      "ready": "Bereit!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Mohammadreza Abedinpoor. Alle Rechte vorbehalten.",
+    "sourceCode": "Quellcode"
+  },
+  "aria": {
+    "nav": "Hauptnavigation",
+    "home": "Zur Startseite",
+    "lang": "Sprache ändern",
+    "theme": "Design ändern",
+    "menu": "Menü öffnen/schließen",
+    "back": "Nach oben",
+    "email": "E-Mail senden",
+    "github": "GitHub-Profil anzeigen",
+    "linkedin": "LinkedIn-Profil anzeigen"
+  }
+}

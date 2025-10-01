@@ -1,0 +1,51 @@
+{
+  "name": "محمدرضا عابدین‌پور - رزومه",
+  "short_name": "رزومه م.ع",
+  "description": "رزومه آنلاین محمدرضا عابدین‌پور - دانش‌آموز پایه دوازدهم و علاقه‌مند به هوش مصنوعی و برنامه‌نویسی",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "./assets/images/johnz.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "تماس",
+      "short_name": "تماس",
+      "description": "ارسال پیام مستقیم",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "./assets/images/logo1.png",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "پروژه‌ها",
+      "short_name": "پروژه‌ها",
+      "description": "مشاهده پروژه‌های انجام شده",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "./assets/images/logo1.png",
+          "sizes": "any"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

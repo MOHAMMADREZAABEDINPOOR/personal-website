@@ -1,0 +1,876 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr-text">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammadreza Abedinpour's resume - 12th-grade student passionate about AI and programming">
+    <meta name="keywords" content="resume, programming, artificial intelligence, internship, Mohammadreza Abedinpour">
+    <meta name="author" content="Mohammadreza Abedinpour">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/">
+    <meta property="og:title" content="Mohammadreza Abedinpour - Resume">
+    <meta property="og:description" content="12th-grade Student | AI & Programming Enthusiast | Open to Internships">
+    <meta property="og:image" content="./assets/images/logo1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/">
+    <meta property="twitter:title" content="Mohammadreza Abedinpour - Resume">
+    <meta property="twitter:description" content="12th-grade Student | AI & Programming Enthusiast | Open to Internships">
+    <meta property="twitter:image" content="./assets/images/1.png">
+
+    <title>Mohammadreza Abedinpour - Resume</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/2.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/2.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammadreza Abedinpour",
+        "jobTitle": "12th-grade Student",
+        "description": "AI & Programming Enthusiast",
+        "email": "mohammadrezaabedinpoor6@gmail.com",
+        "url": "https://yourusername.github.io/",
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://linkedin.com/in/yourusername"
+        ],
+        "knowsAbout": ["Python", "C++", "HTML", "CSS", "JavaScript", "Git", "Arduino"],
+        "alumniOf": "Dr. Ali Shariati High School"
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <!-- Animated Logo -->
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <div class="logo-inner">
+                        <span class="logo-text">MA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Loading Animation -->
+            <div class="loading-animation">
+                <div class="loading-spinner">
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                    <div class="spinner-ring"></div>
+                </div>
+            </div>
+            
+            <!-- Loading Text -->
+            <div class="loading-text">
+                <h2 class="loading-title">Mohammadreza Abedinpour</h2>
+                <p class="loading-subtitle">Loading Portfolio...</p>
+                <div class="loading-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <span class="progress-text">0%</span>
+                </div>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="loading-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beautiful Animated Background -->
+    <div class="animated-background">
+        <div class="floating-particles"></div>
+        <div class="gradient-waves"></div>
+        <div class="geometric-shapes"></div>
+        <div class="floating-orbs"></div>
+        <div class="morphing-shapes"></div>
+        <div class="animated-grid"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-key="nav.home">خانه</a>
+                <a href="#about" class="nav-link" data-key="nav.about">درباره</a>
+                <a href="#skills" class="nav-link" data-key="nav.skills">مهارت‌ها</a>
+                <a href="#projects" class="nav-link" data-key="nav.projects">پروژه‌ها</a>
+                <a href="#achievements" class="nav-link" data-key="nav.achievements">افتخارات</a>
+                <a href="#education" class="nav-link" data-key="nav.education">تحصیلات</a>
+                <a href="#contact" class="nav-link" data-key="nav.contact">تماس</a>
+            </div>
+            
+            <div class="nav-controls">
+                <div class="language-dropdown">
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
+                        <span class="current-lang" id="current-lang-display">English</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu" id="lang-dropdown">
+                        <button class="dropdown-item" data-lang="de" data-target="de">
+                            <span>🇩🇪 Deutsch</span>
+                        </button>
+                        <button class="dropdown-item" data-lang="en" data-target="en">
+                            <span>🇺🇸 English</span>
+                        </button>
+                        <button class="dropdown-item" data-lang="fa" data-target="fa">
+                            <span>🇮🇷 فارسی</span>
+                        </button>
+                        <button class="dropdown-item" data-lang="fr" data-target="fr">
+                            <span>🇫🇷 Français</span>
+                        </button>
+                        <button class="dropdown-item" data-lang="es" data-target="es">
+                            <span>🇪🇸 Español</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Open/close menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Change theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge" data-key="hero.badge">کاوشگر هوش مصنوعی و وب</div>
+                    <h1 class="hero-title" data-key="hero.name">محمدرضا عابدین‌پور</h1>
+                    <p class="hero-subtitle" data-key="hero.title">دانش‌آموز پایه دوازدهم | علاقه‌مند به هوش مصنوعی و برنامه‌نویسی | جویای کارآموزی</p>
+                    <p class="hero-description" data-key="hero.description">دانش‌آموز کنجکاو با علاقه به AI و وب؛ من از سال 2021 برنامه‌نویسی می‌کنم؛ تمرکز روی پروژه‌های کوچک کاربردی و یادگیری مستمر.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label" data-key="hero.metric.experience">سال تجربه برنامه‌نویسی</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label" data-key="hero.metric.projects">پروژه تکمیل شده</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-key="hero.metric.certificates">گواهینامه بین‌المللی</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-key="hero.contact">تماس با من</a>
+                        <a href="./certificates/cv.pdf" class="btn btn-secondary" download data-key="hero.download">دانلود CV</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-orb">
+                        <div class="orb-core">
+                            <span>AI � Web</span>
+                        </div>
+                        <div class="orb-ring"></div>
+                        <div class="orb-particles"></div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-card" data-skill="Python">
+                            <div class="card-icon">🐍</div>
+                            <span>Python</span>
+                        </div>
+                        <div class="floating-card" data-skill="Web">
+                            <div class="card-icon">🌐</div>
+                            <span>Web Dev</span>
+                        </div>
+                        <div class="floating-card" data-skill="AI">
+                            <div class="card-icon">🤖</div>
+                            <span>AI</span>
+                        </div>
+                        <div class="floating-card" data-skill="Telegram">
+                            <div class="card-icon">📱</div>
+                            <span>Bots</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section" role="region" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="about-header">
+                <h2 id="about-heading" class="section-title about-title" data-key="about.title">درباره من</h2>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text-container">
+                        <div class="about-text">
+                            <div class="text-block">
+                                <div class="text-icon">👨‍💻</div>
+                                <p data-key="about.text.intro">
+                                    من محمدرضا عابدین‌پور، دانش‌آموز پایه دوازدهم هستم که به دنیای تکنولوژی و برنامه‌نویسی علاقه‌مندم. 
+                                    از کودکی کنجکاو یادگیری چیزهای جدید بودم و این کنجکاوی مرا به سمت برنامه‌نویسی و هوش مصنوعی کشانده است.
+                                </p>
+                            </div>
+                            <div class="text-block">
+                                <div class="text-icon">🚀</div>
+                                <p data-key="about.text.experience">
+                                    من از سال 2021 برنامه‌نویسی می‌کنم و در این مدت تجربه‌های ارزشمندی در کار تیمی و حل مسئله کسب کرده‌ام. 
+                                    پروژه‌هایم معمولاً بر روی ایجاد راه‌حل‌های کاربردی و یادگیری تکنولوژی‌های جدید متمرکز است.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats-container">
+                    <div class="stats-header">
+                        <h3 data-key="about.stats.heading">آمار و دستاوردها</h3>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">⏱️</div>
+                            <div class="stat-content">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label" data-key="about.stats.experience">سال تجربه برنامه‌نویسی</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">💼</div>
+                            <div class="stat-content">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label" data-key="about.stats.projects">پروژه تکمیل شده</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-content">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label" data-key="about.stats.certificates">گواهینامه بین‌المللی</span>
+                            </div>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ethics-section">
+                    <div class="ethics-header">
+                        <h3 data-key="about.ethics.heading">اخلاقیات</h3>
+                    </div>
+                    <div class="ethics-cards">
+                        <div class="ethics-card">
+                            <div class="ethics-icon">📚</div>
+                            <div class="ethics-content">
+                                <h4 data-key="about.ethics.learning.title">یادگیری مستمر</h4>
+                                <p data-key="about.ethics.learning.description">همیشه در حال یادگیری تکنولوژی‌های جدید</p>
+                            </div>
+                        </div>
+                        <div class="ethics-card">
+                            <div class="ethics-icon">🤝</div>
+                            <div class="ethics-content">
+                                <h4 data-key="about.ethics.teamwork.title">کار تیمی</h4>
+                                <p data-key="about.ethics.teamwork.description">تجربه همکاری در پروژه‌های گروهی</p>
+                            </div>
+                        </div>
+                        <div class="ethics-card">
+                            <div class="ethics-icon">🎯</div>
+                            <div class="ethics-content">
+                                <h4 data-key="about.ethics.innovation.title">تمرکز بر نوآوری</h4>
+                                <p data-key="about.ethics.innovation.description">ایجاد راه‌حل‌های خلاقانه و کاربردی</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" role="region" aria-labelledby="skills-heading">
+        <div class="container">
+            <h2 id="skills-heading" class="section-title" data-key="skills.title">مهارت‌ها</h2>
+            
+            <!-- Tech & Certification Banner -->
+            <div class="tech-banner-container">
+                <div class="tech-banner">
+                    <!-- Skills from image -->
+                    <div class="tech-logo">🌐 Web Development</div>
+                    <div class="tech-logo">🤖 AI Development</div>
+                    <div class="tech-logo">💬 AI Prompting</div>
+                    <div class="tech-logo">🗄️ SQL/MySQL</div>
+                    <div class="tech-logo">🌐 Django</div>
+                    <div class="tech-logo">📱 Flutter</div>
+                    <div class="tech-logo">⚡ Full-stack Developer</div>
+                    <div class="tech-logo">🎨 UI/UX</div>
+                    <div class="tech-logo">📊 Git GitHub</div>
+                    <div class="tech-logo">🚀 Deployment</div>
+                    <div class="tech-logo">🐍 Python</div>
+                    <div class="tech-logo">🎨 Photoshop</div>
+                    <div class="tech-logo">🔧 Arduino</div>
+                    <div class="tech-logo">🎬 CapCut</div>
+                    <div class="tech-logo">📊 Excel</div>
+                    <div class="tech-logo">🎥 Video Editing</div>
+                    <div class="tech-logo">🖼️ Image Editing</div>
+                    
+                    <!-- Duplicate for seamless loop -->
+                    <div class="tech-logo">🌐 Web Development</div>
+                    <div class="tech-logo">🤖 AI Development</div>
+                    <div class="tech-logo">💬 AI Prompting</div>
+                    <div class="tech-logo">🗄️ SQL/MySQL</div>
+                    <div class="tech-logo">🌐 Django</div>
+                    <div class="tech-logo">📱 Flutter</div>
+                    <div class="tech-logo">⚡ Full-stack Developer</div>
+                    <div class="tech-logo">🎨 UI/UX</div>
+                    <div class="tech-logo">📊 Git GitHub</div>
+                    <div class="tech-logo">🚀 Deployment</div>
+                    <div class="tech-logo">🐍 Python</div>
+                    <div class="tech-logo">🎨 Photoshop</div>
+                    <div class="tech-logo">🔧 Arduino</div>
+                    <div class="tech-logo">🎬 CapCut</div>
+                    <div class="tech-logo">📊 Excel</div>
+                    <div class="tech-logo">🎥 Video Editing</div>
+                    <div class="tech-logo">🖼️ Image Editing</div>
+                    
+                    <!-- Third set for perfect seamless loop -->
+                    <div class="tech-logo">🌐 Web Development</div>
+                    <div class="tech-logo">🤖 AI Development</div>
+                    <div class="tech-logo">💬 AI Prompting</div>
+                    <div class="tech-logo">🗄️ SQL/MySQL</div>
+                    <div class="tech-logo">🌐 Django</div>
+                    <div class="tech-logo">📱 Flutter</div>
+                    <div class="tech-logo">⚡ Full-stack Developer</div>
+                    <div class="tech-logo">🎨 UI/UX</div>
+                    <div class="tech-logo">📊 Git GitHub</div>
+                    <div class="tech-logo">🚀 Deployment</div>
+                    <div class="tech-logo">🐍 Python</div>
+                    <div class="tech-logo">🎨 Photoshop</div>
+                    <div class="tech-logo">🔧 Arduino</div>
+                    <div class="tech-logo">🎬 CapCut</div>
+                    <div class="tech-logo">📊 Excel</div>
+                    <div class="tech-logo">🎥 Video Editing</div>
+                    <div class="tech-logo">🖼️ Image Editing</div>
+                            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skill Details Modal -->
+    <div id="skill-modal" class="skill-modal">
+        <div class="skill-modal-content">
+            <div class="skill-modal-header">
+                <h3 id="skill-modal-title">Skill Details</h3>
+                <button class="skill-modal-close">&times;</button>
+                        </div>
+            <div class="skill-modal-body">
+                <div class="skill-modal-icon" id="skill-modal-icon"></div>
+                <div class="skill-modal-info">
+                    <p id="skill-modal-description">Skill description will appear here.</p>
+                    <div class="skill-modal-level">
+                        <span>Level: </span>
+                        <span id="skill-modal-level">Intermediate</span>
+                    </div>
+                    <div class="skill-modal-experience">
+                        <span>Experience: </span>
+                        <span id="skill-modal-experience">2+ years</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+                
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="project-modal" role="dialog" aria-labelledby="project-modal-title" aria-hidden="true">
+        <div class="project-modal-content">
+            <div class="project-modal-header">
+                <h3 id="project-modal-title">جزئیات پروژه</h3>
+                <button class="project-modal-close" aria-label="بستن">&times;</button>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-modal-gallery">
+                    <div class="project-modal-main-image">
+                        <img id="project-modal-main-img" src="" alt="تصویر اصلی پروژه">
+                    </div>
+                    <div class="project-modal-thumbnails" id="project-modal-thumbnails">
+                        <!-- Thumbnails will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="project-modal-info">
+                    <div class="project-modal-summary">
+                        <h4 data-key="projects.modal.about">درباره پروژه</h4>
+                        <p id="project-modal-description">توضیحات پروژه اینجا نمایش داده می‌شود...</p>
+                    </div>
+                    
+                    <div class="project-modal-features">
+                        <h4 data-key="projects.modal.features">ویژگی‌های کلیدی:</h4>
+                        <ul id="project-modal-features-list">
+                            <li>ویژگی اول</li>
+                            <li>ویژگی دوم</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-modal-tech">
+                        <h4 data-key="projects.modal.technologies">مهارت‌ها و تکنولوژی‌ها:</h4>
+                        <div id="project-modal-tech-tags" class="tech-tags-container">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+                <!-- Connection Lines -->
+                <div class="connection-lines">
+                    <svg class="connections-svg" viewBox="0 0 400 400">
+                        <defs>
+                            <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:0.3" />
+                                <stop offset="50%" style="stop-color:var(--secondary-color);stop-opacity:0.6" />
+                                <stop offset="100%" style="stop-color:var(--accent-color);stop-opacity:0.3" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="200" cy="200" r="180" fill="none" stroke="url(#connectionGradient)" stroke-width="2" stroke-dasharray="5,5" class="connection-ring">
+                            <animateTransform attributeName="transform" type="rotate" values="0 200 200;360 200 200" dur="20s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="200" cy="200" r="120" fill="none" stroke="url(#connectionGradient)" stroke-width="1" stroke-dasharray="3,3" class="connection-ring">
+                            <animateTransform attributeName="transform" type="rotate" values="360 200 200;0 200 200" dur="15s" repeatCount="indefinite"/>
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" role="region" aria-labelledby="projects-heading">
+        <div class="container">
+            <h2 id="projects-heading" class="section-title" data-key="projects.title">پروژه‌ها</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/images/1 (1).png" alt="وب‌اپ چت‌بات هوشمند" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-icon">🤖</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-key="projects.cards.chatbot.title">وب‌اپ چت‌بات هوشمند</h3>
+                        <p class="project-description" data-key="projects.cards.chatbot.description">پروژهٔ کامل چت‌بات با احراز هویت، ایمیل‌های تراکنشی و پنل ادمین اختصاصی. پاسخ‌ها از طریق Google Gemini 2.5 Flash API تولید می‌شوند.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Google Gemini</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-details-btn" data-project="chatbot" data-key="projects.details_button">جزئیات</button>
+                            <span class="coming-soon-text" data-key="projects.coming_soon">بزودی منتشر می‌شود</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/images/2 (1).png" alt="پلتفرم وبلاگ مدرسه" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-icon">📝</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-key="projects.cards.blog.title">پلتفرم وبلاگ مدرسه</h3>
+                        <p class="project-description" data-key="projects.cards.blog.description">سایت وبلاگ برای معاون آموزشی مدرسه با پنل ادمین، احراز هویت کامل و ایمیل‌های رویدادی. انتشار پست با متن/عکس/آهنگ و کامنت‌گذاری پیشرفته.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-details-btn" data-project="blog" data-key="projects.details_button">جزئیات</button>
+                            <span class="coming-soon-text" data-key="projects.coming_soon">بزودی منتشر می‌شود</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/images/3 (2).png" alt="ایجنت تلگرام با داشبورد وب" loading="lazy">
+                        <div class="project-overlay">
+                            <span class="project-icon">📱</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title" data-key="projects.cards.telegram-agent.title">ایجنت تلگرام با داشبورد وب</h3>
+                        <p class="project-description" data-key="projects.cards.telegram-agent.description">ایجنت تلگرامی که پیام‌ها را پردازش و پاسخ‌های شخصی‌سازی‌شده ارائه می‌کند؛ مناسب فروشگاه‌های آنلاین و تیم‌های پشتیبانی. همراه با داشبورد وب برای نظارت و مدیریت.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Telegram Bot API</span>
+                            <span class="tech-tag">Google Gemini</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="project-details-btn" data-project="telegram-agent" data-key="projects.details_button">جزئیات</button>
+                            <span class="coming-soon-text" data-key="projects.coming_soon">بزودی منتشر می‌شود</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section" role="region" aria-labelledby="achievements-heading">
+        <div class="container">
+            <h2 id="achievements-heading" class="section-title" data-key="achievements.title">افتخارات</h2>
+            
+            <!-- Sharif University Achievement -->
+            <div class="sharif-achievement">
+                <div class="sharif-card">
+                    <div class="sharif-background"></div>
+                    <div class="sharif-overlay">
+                        <div class="sharif-logo">🎓</div>
+                        <h3 data-key="achievements.sharif.title">دانشگاه صنعتی شریف</h3>
+                        <p data-key="achievements.sharif.ranking">رتبه 3 در ایران و 548 در جهان</p>
+                        <div class="sharif-achievement-details">
+                            <p data-key="achievements.sharif.description">من جزو 3 دانشجوی برتر دوره‌های دانشگاه صنعتی شریف بودم</p>
+                        </div>
+                        <div class="sharif-stats">
+                            <div class="sharif-stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label" data-key="achievements.sharif.rank_iran">رتبه در ایران</span>
+                            </div>
+                            <div class="sharif-stat">
+                                <span class="stat-number">548</span>
+                                <span class="stat-label" data-key="achievements.sharif.rank_global">رتبه در جهان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- International Certificates -->
+            <div class="certificates-grid">
+                <div class="certificate-card coursera rice">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon python-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/AnIntroductiontoInteractiveProgramminginPytho(Part1).pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificate-card coursera sharif-university">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon ai-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/FamiliaritywithEmergingTechnologiesandFuture Jobs.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificate-card johns-hopkins">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon html-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/HTML,CSS,andJavascriptforWebDevelopers.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+
+                
+                <div class="certificate-card toronto">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon ai-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/LearntoProgramTheFundamentals.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificate-card michigan">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon python-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/Programming forEverybody(GettingStartedwithPython).pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificate-card london">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon html-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/ResponsiveWebsiteBasicsCodewithHTML,CSS,andJavaScript.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificate-card michigan">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon django-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/WebApplicationTechnologiesandDjango.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card michigan">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon html-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/IntroductiontoFrontEndDevelopment.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card meta">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon python-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/IntroductiontoPythonProgramming.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card michigan">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon html-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/WebDesignforEverybodyCapstone.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" role="region" aria-labelledby="education-heading">
+        <div class="container">
+            <h2 id="education-heading" class="section-title" data-key="education.title">تحصیلات</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title" data-key="education.highschool.title">دبیرستان دکتر علی‌شریعتی</h3>
+                        <p class="timeline-subtitle" data-key="education.highschool.subtitle">دانش‌آموز پایه دوازدهم</p>
+                        <p class="timeline-description" data-key="education.highschool.description">از سال 2021 تا کنون در رشته ریاضی و فیزیک</p>
+                        <span class="timeline-date">2021 - 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" role="region" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="section-title" data-key="contact.title">تماس با من</h2>
+            <div class="contact-content">
+                <div class="contact-unified">
+                    <h3 data-key="contact.heading">ارتباط با من</h3>
+                    <div class="contact-links">
+                        <a href="mailto:mohammadrezaabedinpoor6@gmail.com" class="contact-link email">
+                            <span class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </span>
+                            <div class="contact-details">
+                                <h4 data-key="contact.email.title">ایمیل</h4>
+                                <p>mohammadrezaabedinpoor6@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+989123456789" class="contact-link phone">
+                            <span class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </span>
+                            <div class="contact-details">
+                                <h4 data-key="contact.phone.title">تلفن</h4>
+                                <p>+98 912 345 6789</p>
+                            </div>
+                        </a>
+                        <a href="https://t.me/yourusername" class="contact-link telegram">
+                            <span class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </span>
+                            <div class="contact-details">
+                                <h4 data-key="contact.telegram.title">Telegram</h4>
+                                <p data-key="contact.telegram.label">Telegram</p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/989123456789" class="contact-link whatsapp">
+                            <span class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                                </svg>
+                            </span>
+                            <div class="contact-details">
+                                <h4 data-key="contact.whatsapp.title">WhatsApp</h4>
+                                <p data-key="contact.whatsapp.label">WhatsApp</p>
+                            </div>
+                        </a>
+                        <a href="https://youtube.com/@yourusername" class="contact-link youtube">
+                            <span class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </span>
+                            <div class="contact-details">
+                                <h4 data-key="contact.youtube.title">YouTube</h4>
+                                <p data-key="contact.youtube.label">YouTube</p>
+                            </div>
+                        </a>
+                        <div class="contact-link location">
+                            <span class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </span>
+                            <div class="contact-details">
+                                <h4 data-key="contact.location.title">آدرس</h4>
+                                <p data-key="contact.location.address">تهران، ایران</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p data-key="footer.copyright">&copy; 2024 محمدرضا عابدین‌پور. تمام حقوق محفوظ است.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:mohammadrezaabedinpoor6@gmail.com" class="footer-link email" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </a>
+                    <a href="tel:+989123456789" class="footer-link phone" aria-label="Phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/yourusername" class="footer-link telegram" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/989123456789" class="footer-link whatsapp" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@yourusername" class="footer-link youtube" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Skill Details Popup -->
+    <div class="skill-popup-overlay" id="skill-popup-overlay"></div>
+    <div class="skill-popup" id="skill-popup">
+        <div class="skill-popup-header">
+            <div class="skill-popup-title">
+                <span class="skill-popup-icon" id="popup-icon">🤖</span>
+                <span id="popup-title">AI Development</span>
+            </div>
+            <button class="skill-popup-close" id="popup-close">×</button>
+        </div>
+        <div class="skill-popup-content" id="popup-content">
+            توضیحات مهارت اینجا نمایش داده می‌شود...
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
