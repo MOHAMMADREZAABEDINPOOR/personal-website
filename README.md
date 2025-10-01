@@ -1,243 +1,198 @@
-# رزومه آنلاین محمدرضا عابدین‌پور
+# 🌟 Personal Website - محمدرضا عابدین‌پور
 
-یک وب‌سایت رزومه تک‌صفحه‌ای مدرن و ریسپانسیو با پشتیبانی کامل از زبان فارسی (RTL) و انگلیسی.
+A modern, responsive personal website showcasing skills, projects, and achievements with beautiful animations and multi-language support.
 
-## ویژگی‌ها
+![Website Preview](https://img.shields.io/badge/Status-Live-brightgreen)
+![Languages](https://img.shields.io/badge/Languages-5-blue)
+![Theme](https://img.shields.io/badge/Theme-Dark%20%7C%20Light-purple)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-green)
 
-### 🎨 طراحی و تجربه کاربری
-- **مینیمال و تمیز**: طراحی مدرن با فاصله‌گذاری مناسب
-- **ریسپانسیو**: Mobile-first design با سازگاری کامل با تمام دستگاه‌ها
-- **تم تاریک**: حالت تاریک خودکار با تشخیص سیستم
-- **انیمیشن‌های سبک**: افکت‌های fade/slide هنگام اسکرول
-- **ناوبری ثابت**: منوی ثابت در بالا با اسکرول نرم
+## ✨ Features
 
-### 🌐 چندزبانه
-- **زبان اصلی**: فارسی (RTL)
-- **زبان دوم**: انگلیسی (LTR)
-- **سوئیچر زبان**: تغییر آسان بین زبان‌ها
-- **ترجمه طبیعی**: محتوای انگلیسی معادل طبیعی، نه ترجمه تحت‌اللفظی
+### 🎨 **Modern Design**
+- Clean, professional layout with glassmorphism effects
+- Smooth animations and transitions
+- Responsive design for all devices
+- Dark/Light theme toggle
 
-### ♿ دسترس‌پذیری و سئو
-- **استانداردهای A11y**: کنتراست مناسب، ARIA labels، ترتیب فوکوس
-- **سئو بهینه**: Meta tags، Open Graph، Twitter Cards
-- **ساختار هدینگ منطقی**: H1-H6 مناسب برای موتورهای جستجو
-- **داده ساختاریافته**: Schema.org Person + Project
-- **Sitemap و Robots**: فایل‌های SEO کامل
+### 🌍 **Multi-Language Support**
+- **English** (Default)
+- **Persian/Farsi** (فارسی)
+- **German** (Deutsch)
+- **French** (Français)
+- **Spanish** (Español)
 
-### 📱 PWA و عملکرد
-- **Progressive Web App**: قابلیت نصب روی دستگاه‌ها
-- **Service Worker**: کش هوشمند و عملکرد آفلاین
-- **Manifest**: تنظیمات کامل PWA
-- **بهینه‌سازی عملکرد**: Lazy loading، فشرده‌سازی
+### 🚀 **Interactive Elements**
+- Animated skills banner with seamless scrolling
+- Project galleries with image carousels
+- Loading screen with progress animation
+- Smooth scroll navigation
+- Hover effects and micro-interactions
 
-## ساختار پروژه
+### 📱 **Progressive Web App (PWA)**
+- Offline functionality
+- Installable on mobile devices
+- Service worker for caching
+- App-like experience
+
+### 🎯 **Sections**
+- **Hero Section**: Introduction with animated background
+- **About**: Personal information and bio
+- **Skills**: Animated tech stack showcase
+- **Projects**: Portfolio with detailed galleries
+- **Certificates**: Educational achievements
+- **Contact**: Social links and communication
+
+## 🛠️ **Technologies Used**
+
+### Frontend
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with CSS Grid & Flexbox
+- **JavaScript (ES6+)** - Interactive functionality
+- **CSS Animations** - Smooth transitions and effects
+
+### Features
+- **Responsive Design** - Mobile-first approach
+- **CSS Custom Properties** - Dynamic theming
+- **Local Storage** - Theme and language persistence
+- **Fetch API** - Dynamic content loading
+- **Service Workers** - PWA capabilities
+
+## 🚀 **Getting Started**
+
+### Prerequisites
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Local web server (optional, for development)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/personal-website.git
+   cd personal-website
+   ```
+
+2. **Open in browser**
+   - Simply open `index.html` in your browser
+   - Or use a local server:
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve .
+   
+   # Using PHP
+   php -S localhost:8000
+   ```
+
+3. **Access the website**
+   - Open `http://localhost:8000` in your browser
+
+## 📁 **Project Structure**
 
 ```
-├── index.html              # صفحه اصلی
-├── manifest.json           # تنظیمات PWA
-├── sw.js                   # Service Worker
-├── robots.txt              # فایل robots
-├── sitemap.xml             # نقشه سایت
-├── README.md               # مستندات
-└── assets/
-    ├── css/
-    │   └── style.css       # استایل‌های اصلی
-    ├── js/
-    │   └── script.js       # اسکریپت‌های تعاملی
-    ├── images/             # تصاویر و آیکون‌ها
-    │   └── README.md       # راهنمای تصاویر
-    └── resume.pdf          # رزومه PDF
+personal-website/
+├── 📄 index.html              # Main HTML file
+├── 📄 manifest.json            # PWA manifest
+├── 📄 sw.js                   # Service worker
+├── 📄 robots.txt              # SEO robots file
+├── 📄 sitemap.xml             # SEO sitemap
+├── 📁 assets/
+│   ├── 📁 css/
+│   │   └── 📄 style.css       # Main stylesheet
+│   ├── 📁 js/
+│   │   └── 📄 script.js       # Main JavaScript
+│   ├── 📁 images/             # Project images
+│   └── 📄 resume.pdf          # Resume file
+├── 📁 certificates/            # Educational certificates
+├── 📁 locales/                # Translation files
+│   ├── 📄 en.json             # English translations
+│   ├── 📄 fa.json             # Persian translations
+│   ├── 📄 de.json             # German translations
+│   ├── 📄 fr.json             # French translations
+│   └── 📄 es.json             # Spanish translations
+└── 📄 README.md               # This file
 ```
 
-## تکنولوژی‌های استفاده شده
+## 🎨 **Customization**
 
-- **HTML5**: ساختار معنایی و مدرن
-- **CSS3**: Flexbox، Grid، Custom Properties، Animations
-- **JavaScript (Vanilla)**: ES6+ بدون وابستگی خارجی
-- **PWA**: Service Worker، Manifest، Offline Support
-- **Fonts**: Vazirmatn (فارسی) + Inter (انگلیسی)
+### Adding New Languages
+1. Create a new JSON file in `locales/` folder
+2. Add translations following the existing structure
+3. Update the language switcher in `script.js`
 
-## نصب و راه‌اندازی
+### Modifying Skills
+1. Edit the skills section in `index.html`
+2. Update the animation logic in `script.js` if needed
 
-### 1. کلون کردن پروژه
-```bash
-git clone https://github.com/yourusername/resume-site.git
-cd resume-site
-```
+### Adding Projects
+1. Add project HTML in the projects section
+2. Include project images in `assets/images/`
+3. Update project modal logic in `script.js`
 
-### 2. ویرایش محتوا
-فایل `index.html` را باز کرده و اطلاعات شخصی خود را جایگزین کنید:
-
-```html
-<!-- تغییر نام و اطلاعات شخصی -->
-<h1>نام شما</h1>
-<p>عنوان شغلی شما</p>
-
-<!-- تغییر لینک‌های شبکه‌های اجتماعی -->
-<a href="https://github.com/yourusername">GitHub</a>
-<a href="https://linkedin.com/in/yourusername">LinkedIn</a>
-```
-
-### 3. اضافه کردن تصاویر
-تصاویر مورد نیاز را در پوشه `assets/images/` قرار دهید:
-
-- `profile.jpg` - عکس پروفایل
-- `project1.jpg`, `project2.jpg`, `project3.jpg` - تصاویر پروژه‌ها
-- آیکون‌های PWA در اندازه‌های مختلف
-
-### 4. تست محلی
-```bash
-# استفاده از Python
-python -m http.server 8000
-
-# یا استفاده از Node.js
-npx serve .
-
-# یا استفاده از Live Server در VS Code
-```
-
-## استقرار (Deployment)
+## 🌐 **Deployment**
 
 ### GitHub Pages
-
-1. **ایجاد ریپازیتوری**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/yourusername.github.io.git
-   git push -u origin main
-   ```
-
-2. **فعال‌سازی GitHub Pages**
-   - به تنظیمات ریپازیتوری بروید
-   - بخش Pages را پیدا کنید
-   - Source را روی "Deploy from a branch" تنظیم کنید
-   - Branch را "main" انتخاب کنید
-   - Save کنید
-
-3. **دسترسی به سایت**
-   - سایت شما در آدرس `https://yourusername.github.io` در دسترس خواهد بود
+1. Push code to GitHub repository
+2. Go to repository Settings
+3. Scroll to "Pages" section
+4. Select source branch (usually `main`)
+5. Your site will be available at `https://YOUR_USERNAME.github.io/personal-website`
 
 ### Netlify
-
-1. **آپلود مستقیم**
-   - به [netlify.com](https://netlify.com) بروید
-   - فایل‌ها را drag & drop کنید
-   - سایت شما فوراً منتشر می‌شود
-
-2. **اتصال به Git**
-   - New site from Git
-   - ریپازیتوری GitHub خود را انتخاب کنید
-   - Build command: خالی بگذارید
-   - Publish directory: `/` (root)
-   - Deploy site
-
-3. **تنظیمات اضافی**
-   ```toml
-   # netlify.toml
-   [build]
-     publish = "."
-   
-   [[headers]]
-     for = "/*"
-     [headers.values]
-       X-Frame-Options = "DENY"
-       X-XSS-Protection = "1; mode=block"
-       X-Content-Type-Options = "nosniff"
-   ```
+1. Connect your GitHub repository to Netlify
+2. Deploy automatically on every push
+3. Custom domain support available
 
 ### Vercel
+1. Import your GitHub repository
+2. Deploy with zero configuration
+3. Automatic HTTPS and CDN
 
-1. **نصب Vercel CLI**
-   ```bash
-   npm i -g vercel
-   ```
-
-2. **استقرار**
-   ```bash
-   vercel
-   ```
-
-3. **اتصال به Git**
-   - Import project از GitHub
-   - Framework preset: Other
-   - Build command: خالی
-   - Output directory: `.`
-
-## سفارشی‌سازی
-
-### تغییر رنگ‌ها
-در فایل `assets/css/style.css` متغیرهای CSS را ویرایش کنید:
-
-```css
-:root {
-  --primary-color: #6366f1;    /* رنگ اصلی */
-  --secondary-color: #8b5cf6;  /* رنگ ثانویه */
-  --accent-color: #06b6d4;     /* رنگ تأکیدی */
-}
-```
-
-### اضافه کردن سکشن جدید
-1. HTML سکشن را در `index.html` اضافه کنید
-2. استایل‌های مربوطه را در `style.css` تعریف کنید
-3. لینک ناوبری را به منو اضافه کنید
-
-### تغییر فونت‌ها
-```css
-:root {
-  --font-primary: 'Your-Font-Name', sans-serif;
-}
-```
-
-## بهینه‌سازی
-
-### عملکرد
-- تصاویر را فشرده کنید (TinyPNG، ImageOptim)
-- از فرمت‌های مدرن استفاده کنید (WebP)
-- CSS و JS را minify کنید
-
-### سئو
-- Meta descriptions را بهینه کنید
-- Alt text تصاویر را کامل کنید
-- Schema markup را بررسی کنید
-
-### امنیت
-- HTTPS را فعال کنید
-- Headers امنیتی را اضافه کنید
-- محتوای کاربر را sanitize کنید
-
-## پشتیبانی مرورگرها
+## 📱 **Browser Support**
 
 - ✅ Chrome 60+
 - ✅ Firefox 55+
 - ✅ Safari 12+
 - ✅ Edge 79+
-- ⚠️ IE 11 (محدود)
+- ✅ Mobile browsers
 
-## مشارکت
+## 🤝 **Contributing**
 
-1. Fork کنید
-2. Branch جدید ایجاد کنید (`git checkout -b feature/amazing-feature`)
-3. تغییرات را commit کنید (`git commit -m 'Add amazing feature'`)
-4. Push کنید (`git push origin feature/amazing-feature`)
-5. Pull Request ایجاد کنید
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## لایسنس
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-این پروژه تحت لایسنس MIT منتشر شده است. فایل [LICENSE](LICENSE) را برای جزئیات بیشتر مطالعه کنید.
+## 📄 **License**
 
-## تماس
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- **ایمیل**: mohammadrezaabedinpoor6@gmail.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [محمدرضا عابدین‌پور](https://linkedin.com/in/yourusername)
+## 👨‍💻 **Author**
 
-## تشکر
+**محمدرضا عابدین‌پور (Mohammadreza Abedinpour)**
+- High school student (12th grade)
+- Passionate about AI and programming
+- Interested in web development and machine learning
 
-از تمام کسانی که در ساخت این پروژه کمک کرده‌اند تشکر می‌کنم.
+## 🙏 **Acknowledgments**
+
+- Thanks to all the open-source libraries and resources used
+- Inspiration from modern web design trends
+- Community feedback and suggestions
 
 ---
 
-⭐ اگر این پروژه برای شما مفید بود، لطفاً ستاره بدهید!
+⭐ **Star this repository if you found it helpful!**
+
+🔗 **Live Demo**: [Your Website URL]
+
+📧 **Contact**: [Your Email]
+
+---
+
+*Built with ❤️ and modern web technologies*
