@@ -20,6 +20,7 @@
     "title": "Estudiante de 12º grado | Entusiasta de IA y Programación | Abierto a Prácticas",
     "description": "Estudiante curioso apasionado por la IA y el desarrollo web; programo desde 2021; enfocado en proyectos prácticos pequeños y aprendizaje continuo.",
     "contact": "Contactarme",
+    "view": "Ver CV",
     "download": "Descargar CV",
     "metric": {
       "experience": "Años de Experiencia",
@@ -47,8 +48,8 @@
         "description": "Siempre aprendiendo nuevas tecnologías"
       },
       "teamwork": {
-        "title": "Trabajo en Equipo",
-        "description": "Experiencia en proyectos colaborativos"
+        "title": "Resolver Problemas Diarios",
+        "description": "Crear diversas automatizaciones para tareas repetitivas"
       },
       "innovation": {
         "title": "Enfoque en Innovación",
@@ -59,6 +60,167 @@
   "skills": {
     "title": "Habilidades",
     "heading": "Habilidades",
+    "experience_text": "3+ años de experiencia en desarrollo de software",
+    "sliding": {
+      "python": "Python",
+      "web": "Desarrollo Web",
+      "ai": "Desarrollo de IA",
+      "telegram": "Bots de Telegram",
+      "django": "Django",
+      "sql": "SQL/MySQL",
+      "git": "Git & GitHub",
+      "prompt": "Ingeniería de Prompts",
+      "scraping": "Web Scraping",
+      "deployment": "Despliegue",
+      "arduino": "Arduino",
+      "flutter": "Flutter",
+      "photoshop": "Photoshop",
+      "video": "Edición de Video",
+      "ui": "Diseño UI/UX",
+      "office": "Microsoft 365"
+    },
+    "hover": {
+      "experience_level": "Nivel de Experiencia",
+      "related_projects": "Proyectos Relacionados"
+    },
+    "skillsData": {
+      "python": {
+        "title": "Programación Python",
+        "icon": "🐍",
+        "level": "Intermedio",
+        "experienceText": "3+ años",
+        "description": "Programación interactiva, desarrollo de juegos, automatización y fundamentos de ciencia de datos. Experiencia con varias librerías de Python para proyectos prácticos.",
+        "projects": ["Chatbot Inteligente", "Bot de Telegram", "Web Scraping", "Automatización"]
+      },
+      "web": {
+        "title": "Desarrollo Web",
+        "icon": "🌐",
+        "level": "Intermedio", 
+        "experienceText": "3+ años",
+        "description": "Desarrollo web responsive con HTML, CSS y JavaScript. Diseño UI moderno e interactivo con enfoque en estándares web.",
+        "projects": ["Sitio Web Personal", "Blog Escolar", "Panel Admin", "Interfaz Usuario"]
+      },
+      "ai": {
+        "title": "Desarrollo de IA",
+        "icon": "🤖",
+        "level": "Fuerte",
+        "experienceText": "2+ años", 
+        "description": "Desarrollo asistido por IA usando Cursor, GitHub Copilot y ChatGPT para programación, revisión de código y documentación.",
+        "projects": ["Chatbot IA", "Agente Telegram", "Ingeniería Prompts", "Revisión Código"]
+      },
+      "telegram": {
+        "title": "Bots de Telegram",
+        "icon": "📱",
+        "level": "Fuerte",
+        "experienceText": "3+ meses",
+        "description": "Desarrollo de bots inteligentes de Telegram, webhooks y sistemas de programación. Crear automatizaciones prácticas para mejorar el flujo de trabajo.",
+        "projects": ["Agente de Ventas", "Bot de Soporte", "Automatización", "Dashboard Web"]
+      },
+      "django": {
+        "title": "Framework Django",
+        "icon": "🎯",
+        "level": "Intermedio",
+        "experienceText": "2+ años",
+        "description": "Desarrollo de aplicaciones web con Django, arquitectura MVC e integración de base de datos. Construir sistemas de gestión de contenido y APIs RESTful.",
+        "projects": ["Chatbot Web App", "Sistema Blog", "Panel Gestión", "Servicio API"]
+      },
+      "sql": {
+        "title": "SQL y Base de Datos",
+        "icon": "🗄️",
+        "level": "Intermedio",
+        "experienceText": "2+ años",
+        "description": "Diseño de esquemas de base de datos y escritura de consultas complejas. Trabajo con MySQL y gestión de datos estructurados.",
+        "projects": ["Base Datos Usuarios", "Sistema Autenticación", "Gestión Contenido", "Reportes"]
+      },
+      "git": {
+        "title": "Git y GitHub",
+        "icon": "📊",
+        "level": "Intermedio",
+        "experienceText": "1+ año",
+        "description": "Control de versiones con Git, trabajo con ramas y Pull Requests. Colaboración en equipo y gestión de proyectos de código abierto.",
+        "projects": ["Gestión Proyecto", "Colaboración Equipo", "Revisión Código", "CI/CD"]
+      },
+      "prompt": {
+        "title": "Ingeniería de Prompts",
+        "icon": "💬",
+        "level": "Intermedio",
+        "experienceText": "1+ año",
+        "description": "Escritura de prompts con ChatGPT, Cursor y Codex. Diseñar instrucciones efectivas para obtener mejores resultados de modelos de IA.",
+        "projects": ["Chatbot Inteligente", "Agente IA", "Generador Código", "Documentación"]
+      },
+      "scraping": {
+        "title": "Web Scraping",
+        "icon": "🕷️",
+        "level": "Intermedio",
+        "experienceText": "2+ meses",
+        "description": "Recolección de datos de sitios web usando Python y librerías de scraping. Extraer información estructurada y procesar datos en línea.",
+        "projects": ["Recolección Precios", "Noticias Auto", "Monitoreo", "Análisis Datos"]
+      },
+      "deployment": {
+        "title": "Despliegue",
+        "icon": "🚀",
+        "level": "Intermedio",
+        "experienceText": "3+ meses",
+        "description": "Despliegue de proyectos en hosting compartido y VPS. Configuración de dominio, SSL y webhooks de Telegram. Gestión de servidor y optimización de rendimiento.",
+        "projects": ["Despliegue Web App", "Configuración Servidor", "SSL y Dominio", "Monitoreo"]
+      },
+      "deploy": {
+        "title": "Despliegue",
+        "icon": "🚀",
+        "level": "Intermedio",
+        "experienceText": "3+ meses",
+        "description": "Despliegue de proyectos en hosting compartido y VPS. Configuración de dominio, SSL y webhooks de Telegram. Gestión de servidor y optimización de rendimiento.",
+        "projects": ["Despliegue Web App", "Configuración Servidor", "SSL y Dominio", "Monitoreo"]
+      },
+      "arduino": {
+        "title": "Arduino e IoT",
+        "icon": "🔧",
+        "level": "Principiante",
+        "experienceText": "1+ año",
+        "description": "Programación de microcontroladores, trabajo con sensores (LM35, Ultrasónico) y proyectos IoT. Construir sistemas interactivos y automatización de hardware.",
+        "projects": ["Sensor Temperatura", "Medidor Distancia", "Automatización Casa", "Proyecto IoT"]
+      },
+      "flutter": {
+        "title": "Desarrollo Flutter",
+        "icon": "📱",
+        "level": "Principiante",
+        "experienceText": "2+ meses",
+        "description": "Desarrollo de aplicaciones móviles con Flutter. Crear interfaces de usuario hermosas y de alto rendimiento para plataformas Android e iOS.",
+        "projects": ["App Móvil", "Interfaz Usuario", "Multiplataforma", "Prototipo"]
+      },
+      "photoshop": {
+        "title": "Photoshop y Diseño",
+        "icon": "🎨",
+        "level": "Intermedio",
+        "experienceText": "2+ años",
+        "description": "Retoque fotográfico, diseño gráfico y edición de imágenes. Trabajo con herramientas avanzadas de Photoshop para crear contenido visual profesional.",
+        "projects": ["Retoque Foto", "Diseño Logo", "Banner Publicitario", "Mockup UI"]
+      },
+      "video": {
+        "title": "Edición de Video",
+        "icon": "🎬",
+        "level": "Intermedio",
+        "experienceText": "6+ meses",
+        "description": "Edición de video con CapCut, creación de contenido para YouTube y producción de videos educativos. Combinar audio, video y efectos visuales.",
+        "projects": ["Video YouTube", "Contenido Educativo", "Teaser Publicitario", "Edición Musical"]
+      },
+      "ui": {
+        "title": "Diseño UI/UX",
+        "icon": "🎨",
+        "level": "Intermedio",
+        "experienceText": "1+ año",
+        "description": "Diseño de interfaz de usuario y experiencia de usuario. Crear mockups, wireframes y prototipos interactivos para web y móvil.",
+        "projects": ["Diseño Sitio Web", "App Móvil", "Dashboard", "Página Aterrizaje"]
+      },
+      "office": {
+        "title": "Microsoft 365",
+        "icon": "📊",
+        "level": "Intermedio",
+        "experienceText": "2+ años",
+        "description": "Uso de la suite de software Microsoft 365 para productividad de oficina. Trabajo con Word, Excel, PowerPoint y herramientas de colaboración en equipo.",
+        "projects": ["Documentación", "Reportes", "Presentación", "Análisis Datos"]
+      }
+    },
     "categories": {
       "core": "Núcleo",
       "tools": "Herramientas y Plataformas",
@@ -263,7 +425,7 @@
     "sharif": {
       "title": "Universidad de Tecnología Sharif",
       "ranking": "Puesto 3 en Irán y 548 a nivel mundial",
-      "description": "Estuve entre los 3 mejores estudiantes en cursos de la Universidad Sharif",
+      "description": "Estuve entre los mejores estudiantes en 2 cursos de los programas estudiantiles de la Universidad Sharif",
       "rank_iran": "Puesto en Irán",
       "rank_global": "Puesto Global"
     },
@@ -294,10 +456,10 @@
     "highschool": {
       "title": "Escuela Secundaria Dr. Ali Shariati",
       "subtitle": "Estudiante de 12º grado",
-      "description": "Desde 2021 hasta el presente en Matemáticas y Física"
+      "description": "Desde 2022 hasta el presente en Matemáticas y Física"
     },
     "school": "Escuela Secundaria Dr. Ali Shariati",
-    "period": "2021 - 2024",
+    "period": "2022 - 2025",
     "grade": "10º a 12º grado - Matemáticas y Física",
     "details": [
       "Miembro activo del equipo de robótica",
@@ -315,7 +477,7 @@
     },
     "location": {
       "title": "Ubicación",
-      "address": "Teherán, Irán"
+      "address": "Rasht, Irán"
     },
     "subtitle": "Hablemos",
     "description": "Para prácticas, colaboraciones de proyectos o cualquier otra pregunta, me encantaría conectarme contigo.",
@@ -341,7 +503,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 Mohammadreza Abedinpoor. Todos los derechos reservados.",
+    "copyright": "© 2025 Mohammadreza Abedinpoor. Todos los derechos reservados.",
     "sourceCode": "Código Fuente"
   },
   "aria": {

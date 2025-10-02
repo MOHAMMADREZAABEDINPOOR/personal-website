@@ -20,6 +20,7 @@
     "title": "12th-grade Student | AI & Programming Enthusiast | Open to Internships",
     "description": "Curious student passionate about AI and web development; I've been programming since 2021; focused on practical small projects and continuous learning.",
     "contact": "Contact Me",
+    "view": "View CV",
     "download": "Download CV",
     "metric": {
       "experience": "Years Experience",
@@ -47,8 +48,8 @@
         "description": "Always learning new technologies"
       },
       "teamwork": {
-        "title": "Teamwork",
-        "description": "Experience in collaborative projects"
+        "title": "Solving Daily Problems",
+        "description": "Creating various automations for repetitive tasks"
       },
       "innovation": {
         "title": "Innovation Focus",
@@ -59,6 +60,167 @@
   "skills": {
     "title": "Skills",
     "heading": "Skills",
+    "experience_text": "3+ years experience in software development",
+    "sliding": {
+      "python": "Python",
+      "web": "Web Development",
+      "ai": "AI Development",
+      "telegram": "Telegram Bots",
+      "django": "Django",
+      "sql": "SQL/MySQL",
+      "git": "Git & GitHub",
+      "prompt": "Prompt Engineering",
+      "scraping": "Web Scraping",
+      "deployment": "Deployment",
+      "arduino": "Arduino",
+      "flutter": "Flutter",
+      "photoshop": "Photoshop",
+      "video": "Video Editing",
+      "ui": "UI/UX Design",
+      "office": "Microsoft 365"
+    },
+    "hover": {
+      "experience_level": "Experience Level",
+      "related_projects": "Related Projects"
+    },
+    "skillsData": {
+      "python": {
+        "title": "Python Programming",
+        "icon": "🐍",
+        "level": "Intermediate",
+        "experienceText": "3+ years",
+        "description": "Interactive programming, game development, automation and data science fundamentals. Experience with various Python libraries for practical and applied projects.",
+        "projects": ["Smart Chatbot", "Telegram Bot", "Web Scraping", "Automation"]
+      },
+      "web": {
+        "title": "Web Development",
+        "icon": "🌐",
+        "level": "Intermediate",
+        "experienceText": "3+ years",
+        "description": "Responsive web development with HTML, CSS and JavaScript. Modern and interactive UI design with focus on web standards and optimal user experience.",
+        "projects": ["Personal Website", "School Blog", "Admin Panel", "User Interface"]
+      },
+      "ai": {
+        "title": "AI Development",
+        "icon": "🤖",
+        "level": "Strong",
+        "experienceText": "2+ years",
+        "description": "AI-assisted development using Cursor, GitHub Copilot and ChatGPT for coding, code review, writing tests and documentation.",
+        "projects": ["AI Chatbot", "Telegram Agent", "Prompt Engineering", "Code Review"]
+      },
+      "telegram": {
+        "title": "Telegram Bots",
+        "icon": "📱",
+        "level": "Strong",
+        "experienceText": "3+ months",
+        "description": "Smart Telegram bot development, webhooks and scheduling systems. Creating practical automations to improve workflow.",
+        "projects": ["Sales Agent", "Support Bot", "Automation", "Web Dashboard"]
+      },
+      "django": {
+        "title": "Django Framework",
+        "icon": "🎯",
+        "level": "Intermediate",
+        "experienceText": "2+ years",
+        "description": "Web application development with Django, MVC architecture and database integration. Building content management systems and RESTful APIs.",
+        "projects": ["Chatbot Web App", "Blog System", "Management Panel", "API Service"]
+      },
+      "sql": {
+        "title": "SQL & Database",
+        "icon": "🗄️",
+        "level": "Intermediate",
+        "experienceText": "2+ years",
+        "description": "Database schema design and complex query writing. Working with MySQL and structured data management.",
+        "projects": ["User Database", "Authentication System", "Content Management", "Reporting"]
+      },
+      "git": {
+        "title": "Git & GitHub",
+        "icon": "📊",
+        "level": "Intermediate",
+        "experienceText": "1+ year",
+        "description": "Version control with Git, working with branches and Pull Requests. Team collaboration and open source project management.",
+        "projects": ["Project Management", "Team Collaboration", "Code Review", "CI/CD"]
+      },
+      "prompt": {
+        "title": "Prompt Engineering",
+        "icon": "💬",
+        "level": "Intermediate",
+        "experienceText": "1+ year",
+        "description": "Prompt writing with ChatGPT, Cursor and Codex. Designing effective instructions to get the best results from AI models.",
+        "projects": ["Smart Chatbot", "AI Agent", "Code Generator", "Documentation"]
+      },
+      "scraping": {
+        "title": "Web Scraping",
+        "icon": "🕷️",
+        "level": "Intermediate",
+        "experienceText": "2+ months",
+        "description": "Data collection from websites using Python and scraping libraries. Extracting structured information and processing online data.",
+        "projects": ["Price Collection", "Auto News", "Monitoring", "Data Analysis"]
+      },
+      "deployment": {
+        "title": "Deployment",
+        "icon": "🚀",
+        "level": "Intermediate",
+        "experienceText": "3+ months",
+        "description": "Project deployment on shared hosting and VPS. Domain setup, SSL and Telegram webhooks. Server management and performance optimization.",
+        "projects": ["Web App Deployment", "Server Setup", "SSL & Domain", "Monitoring"]
+      },
+      "deploy": {
+        "title": "Deployment",
+        "icon": "🚀",
+        "level": "Intermediate",
+        "experienceText": "3+ months",
+        "description": "Project deployment on shared hosting and VPS. Domain setup, SSL and Telegram webhooks. Server management and performance optimization.",
+        "projects": ["Web App Deployment", "Server Setup", "SSL & Domain", "Monitoring"]
+      },
+      "arduino": {
+        "title": "Arduino & IoT",
+        "icon": "🔧",
+        "level": "Beginner",
+        "experienceText": "1+ year",
+        "description": "Microcontroller programming, working with sensors (LM35, Ultrasonic) and IoT projects. Building interactive systems and hardware automation.",
+        "projects": ["Temperature Sensor", "Distance Meter", "Home Automation", "IoT Project"]
+      },
+      "flutter": {
+        "title": "Flutter Development",
+        "icon": "📱",
+        "level": "Beginner",
+        "experienceText": "2+ months",
+        "description": "Mobile app development with Flutter. Creating beautiful and high-performance user interfaces for Android and iOS platforms.",
+        "projects": ["Mobile App", "User Interface", "Cross Platform", "Prototype"]
+      },
+      "photoshop": {
+        "title": "Photoshop & Design",
+        "icon": "🎨",
+        "level": "Intermediate",
+        "experienceText": "2+ years",
+        "description": "Photo retouching, graphic design and image editing. Working with advanced Photoshop tools to create professional visual content.",
+        "projects": ["Photo Retouching", "Logo Design", "Ad Banner", "UI Mockup"]
+      },
+      "video": {
+        "title": "Video Editing",
+        "icon": "🎬",
+        "level": "Intermediate",
+        "experienceText": "6+ months",
+        "description": "Video editing with CapCut, YouTube content creation and educational video production. Combining audio, video and visual effects.",
+        "projects": ["YouTube Video", "Educational Content", "Ad Teaser", "Music Edit"]
+      },
+      "ui": {
+        "title": "UI/UX Design",
+        "icon": "🎨",
+        "level": "Intermediate",
+        "experienceText": "1+ year",
+        "description": "User interface and user experience design. Creating mockups, wireframes and interactive prototypes for web and mobile.",
+        "projects": ["Website Design", "Mobile App", "Dashboard", "Landing Page"]
+      },
+      "office": {
+        "title": "Microsoft 365",
+        "icon": "📊",
+        "level": "Intermediate",
+        "experienceText": "2+ years",
+        "description": "Using Microsoft 365 software suite for office productivity. Working with Word, Excel, PowerPoint and team collaboration tools.",
+        "projects": ["Documentation", "Reporting", "Presentation", "Data Analysis"]
+      }
+    },
     "categories": {
       "core": "Core",
       "tools": "Tools & Platforms",
@@ -263,7 +425,7 @@
     "sharif": {
       "title": "Sharif University of Technology",
       "ranking": "Ranked 3rd in Iran and 548th globally",
-      "description": "I was among the top 3 students in Sharif University courses",
+      "description": "I was among the top students in 2 courses of Sharif University student programs",
       "rank_iran": "Rank in Iran",
       "rank_global": "Global Rank"
     },
@@ -294,10 +456,10 @@
     "highschool": {
       "title": "Dr. Ali Shariati High School",
       "subtitle": "12th-grade Student",
-      "description": "From 2021 to present in Mathematics and Physics"
+      "description": "From 2022 to present in Mathematics and Physics"
     },
     "school": "Dr. Ali Shariati High School",
-    "period": "2021 - 2024",
+    "period": "2022 - 2025",
     "grade": "10th to 12th grade - Mathematics and Physics",
     "details": [
       "Active robotics team member",
@@ -327,7 +489,7 @@
     },
     "location": {
       "title": "Location",
-      "address": "Tehran, Iran"
+      "address": "Rasht, Iran"
     },
     "subtitle": "Let's Talk",
     "description": "For internships, project collaboration, or any other questions, I'd be happy to connect with you.",
@@ -353,7 +515,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 Mohammadreza Abedinpoor. All rights reserved.",
+    "copyright": "© 2025 Mohammadreza Abedinpoor. All rights reserved.",
     "sourceCode": "Source Code"
   },
   "aria": {

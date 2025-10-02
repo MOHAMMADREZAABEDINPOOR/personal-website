@@ -22,7 +22,7 @@
     <meta property="twitter:description" content="12th-grade Student | AI & Programming Enthusiast | Open to Internships">
     <meta property="twitter:image" content="./assets/images/1.png">
 
-    <title>Mohammadreza Abedinpour - Resume</title>
+    <title>Mohammadreza Abedinpoor</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/2.png">
@@ -82,7 +82,7 @@
             
             <!-- Loading Text -->
             <div class="loading-text">
-                <h2 class="loading-title">Mohammadreza Abedinpour</h2>
+                <h2 class="loading-title">Mohammadreza Abedinpoor</h2>
                 <p class="loading-subtitle">Loading Portfolio...</p>
                 <div class="loading-progress">
                     <div class="progress-bar">
@@ -129,6 +129,12 @@
                 <a href="#contact" class="nav-link" data-key="nav.contact">تماس</a>
             </div>
             
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open/close menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <div class="nav-controls">
                 <div class="language-dropdown">
                     <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
@@ -153,15 +159,9 @@
                         </button>
                     </div>
                 </div>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Open/close menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Change theme">
                     <span class="theme-icon">🌙</span>
                 </button>
-
             </div>
         </div>
     </nav>
@@ -178,11 +178,11 @@
                     
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-number">3+</span>
+                            <span class="stat-number">4+</span>
                             <span class="stat-label" data-key="hero.metric.experience">سال تجربه برنامه‌نویسی</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">8+</span>
+                            <span class="stat-number">10+</span>
                             <span class="stat-label" data-key="hero.metric.projects">پروژه تکمیل شده</span>
                         </div>
                         <div class="stat-item">
@@ -193,14 +193,17 @@
                     
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary" data-key="hero.contact">تماس با من</a>
-                        <a href="./certificates/cv.pdf" class="btn btn-secondary" download data-key="hero.download">دانلود CV</a>
+                        <div class="cv-buttons">
+                            <a href="./certificates/cv.pdf" class="btn btn-secondary" target="_blank" data-key="hero.view">مشاهده CV</a>
+                            <a href="./certificates/cv.pdf" class="btn btn-outline" download data-key="hero.download">دانلود CV</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="hero-visual">
                     <div class="hero-orb">
                         <div class="orb-core">
-                            <span>AI � Web</span>
+                            <span>AI & Web</span>
                         </div>
                         <div class="orb-ring"></div>
                         <div class="orb-particles"></div>
@@ -255,7 +258,7 @@
                             <div class="text-block">
                                 <div class="text-icon">🚀</div>
                                 <p data-key="about.text.experience">
-                                    من از سال 2021 برنامه‌نویسی می‌کنم و در این مدت تجربه‌های ارزشمندی در کار تیمی و حل مسئله کسب کرده‌ام. 
+                                    من از سال 2021 برنامه‌نویسی می‌کنم و در این مدت تجربه‌های ارزشمندی در برنامه نویسی و حل مسئله کسب کرده‌ام. 
                                     پروژه‌هایم معمولاً بر روی ایجاد راه‌حل‌های کاربردی و یادگیری تکنولوژی‌های جدید متمرکز است.
                                 </p>
                             </div>
@@ -271,7 +274,7 @@
                         <div class="stat-card">
                             <div class="stat-icon">⏱️</div>
                             <div class="stat-content">
-                                <span class="stat-number">3+</span>
+                                <span class="stat-number">4+</span>
                                 <span class="stat-label" data-key="about.stats.experience">سال تجربه برنامه‌نویسی</span>
                             </div>
                             <div class="stat-progress">
@@ -281,7 +284,7 @@
                         <div class="stat-card">
                             <div class="stat-icon">💼</div>
                             <div class="stat-content">
-                                <span class="stat-number">8+</span>
+                                <span class="stat-number">10+</span>
                                 <span class="stat-label" data-key="about.stats.projects">پروژه تکمیل شده</span>
                             </div>
                             <div class="stat-progress">
@@ -316,8 +319,8 @@
                         <div class="ethics-card">
                             <div class="ethics-icon">🤝</div>
                             <div class="ethics-content">
-                                <h4 data-key="about.ethics.teamwork.title">کار تیمی</h4>
-                                <p data-key="about.ethics.teamwork.description">تجربه همکاری در پروژه‌های گروهی</p>
+                                <h4 data-key="about.ethics.teamwork.title">حل مسئله های روزمره</h4>
+                                <p data-key="about.ethics.teamwork.description">ایجاد اتوماسیون های مختلف برای کارهای تکراری</p>
                             </div>
                         </div>
                         <div class="ethics-card">
@@ -333,97 +336,273 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section" role="region" aria-labelledby="skills-heading">
+    <section id="skills" class="section skills-section" role="region" aria-labelledby="skills-heading">
         <div class="container">
             <h2 id="skills-heading" class="section-title" data-key="skills.title">مهارت‌ها</h2>
             
-            <!-- Tech & Certification Banner -->
-            <div class="tech-banner-container">
-                <div class="tech-banner">
-                    <!-- Skills from image -->
-                    <div class="tech-logo">🌐 Web Development</div>
-                    <div class="tech-logo">🤖 AI Development</div>
-                    <div class="tech-logo">💬 AI Prompting</div>
-                    <div class="tech-logo">🗄️ SQL/MySQL</div>
-                    <div class="tech-logo">🌐 Django</div>
-                    <div class="tech-logo">📱 Flutter</div>
-                    <div class="tech-logo">⚡ Full-stack Developer</div>
-                    <div class="tech-logo">🎨 UI/UX</div>
-                    <div class="tech-logo">📊 Git GitHub</div>
-                    <div class="tech-logo">🚀 Deployment</div>
-                    <div class="tech-logo">🐍 Python</div>
-                    <div class="tech-logo">🎨 Photoshop</div>
-                    <div class="tech-logo">🔧 Arduino</div>
-                    <div class="tech-logo">🎬 CapCut</div>
-                    <div class="tech-logo">📊 Excel</div>
-                    <div class="tech-logo">🎥 Video Editing</div>
-                    <div class="tech-logo">🖼️ Image Editing</div>
+            <!-- Sliding Skills Banner -->
+            <div class="skills-sliding-container">
+                <div class="skills-experience-text" data-key="skills.experience_text">۳+ سال تجربه در توسعه نرم‌افزار</div>
+                <div class="skills-sliding-banner">
+                    <div class="skill-item-sliding" data-skill="python">
+                        <div class="skill-icon">🐍</div>
+                        <div class="skill-name" data-key="skills.sliding.python">Python</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="web">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-name" data-key="skills.sliding.web">Web Development</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="ai">
+                        <div class="skill-icon">🤖</div>
+                        <div class="skill-name" data-key="skills.sliding.ai">AI Development</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="telegram">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name" data-key="skills.sliding.telegram">Telegram Bots</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="django">
+                        <div class="skill-icon">🎯</div>
+                        <div class="skill-name" data-key="skills.sliding.django">Django</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="sql">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-name" data-key="skills.sliding.sql">SQL/MySQL</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="git">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name" data-key="skills.sliding.git">Git & GitHub</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="prompt">
+                        <div class="skill-icon">💬</div>
+                        <div class="skill-name" data-key="skills.sliding.prompt">Prompt Engineering</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="scraping">
+                        <div class="skill-icon">🕷️</div>
+                        <div class="skill-name" data-key="skills.sliding.scraping">Web Scraping</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="deploy">
+                        <div class="skill-icon">🚀</div>
+                        <div class="skill-name" data-key="skills.sliding.deployment">Deployment</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="arduino">
+                        <div class="skill-icon">🔧</div>
+                        <div class="skill-name" data-key="skills.sliding.arduino">Arduino</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="flutter">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name" data-key="skills.sliding.flutter">Flutter</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="photoshop">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name" data-key="skills.sliding.photoshop">Photoshop</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="video">
+                        <div class="skill-icon">🎬</div>
+                        <div class="skill-name" data-key="skills.sliding.video">Video Editing</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="ui">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name" data-key="skills.sliding.ui">UI/UX Design</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="office">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name" data-key="skills.sliding.office">Microsoft 365</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
                     
                     <!-- Duplicate for seamless loop -->
-                    <div class="tech-logo">🌐 Web Development</div>
-                    <div class="tech-logo">🤖 AI Development</div>
-                    <div class="tech-logo">💬 AI Prompting</div>
-                    <div class="tech-logo">🗄️ SQL/MySQL</div>
-                    <div class="tech-logo">🌐 Django</div>
-                    <div class="tech-logo">📱 Flutter</div>
-                    <div class="tech-logo">⚡ Full-stack Developer</div>
-                    <div class="tech-logo">🎨 UI/UX</div>
-                    <div class="tech-logo">📊 Git GitHub</div>
-                    <div class="tech-logo">🚀 Deployment</div>
-                    <div class="tech-logo">🐍 Python</div>
-                    <div class="tech-logo">🎨 Photoshop</div>
-                    <div class="tech-logo">🔧 Arduino</div>
-                    <div class="tech-logo">🎬 CapCut</div>
-                    <div class="tech-logo">📊 Excel</div>
-                    <div class="tech-logo">🎥 Video Editing</div>
-                    <div class="tech-logo">🖼️ Image Editing</div>
+                    <div class="skill-item-sliding" data-skill="python">
+                        <div class="skill-icon">🐍</div>
+                        <div class="skill-name" data-key="skills.sliding.python">Python</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="web">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-name" data-key="skills.sliding.web">Web Development</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="ai">
+                        <div class="skill-icon">🤖</div>
+                        <div class="skill-name" data-key="skills.sliding.ai">AI Development</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="telegram">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name" data-key="skills.sliding.telegram">Telegram Bots</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="django">
+                        <div class="skill-icon">🎯</div>
+                        <div class="skill-name" data-key="skills.sliding.django">Django</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="sql">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-name" data-key="skills.sliding.sql">SQL/MySQL</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="git">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name" data-key="skills.sliding.git">Git & GitHub</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="prompt">
+                        <div class="skill-icon">💬</div>
+                        <div class="skill-name" data-key="skills.sliding.prompt">Prompt Engineering</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="scraping">
+                        <div class="skill-icon">🕷️</div>
+                        <div class="skill-name" data-key="skills.sliding.scraping">Web Scraping</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="deploy">
+                        <div class="skill-icon">🚀</div>
+                        <div class="skill-name" data-key="skills.sliding.deployment">Deployment</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="arduino">
+                        <div class="skill-icon">🔧</div>
+                        <div class="skill-name" data-key="skills.sliding.arduino">Arduino</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="flutter">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name" data-key="skills.sliding.flutter">Flutter</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="photoshop">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name" data-key="skills.sliding.photoshop">Photoshop</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="video">
+                        <div class="skill-icon">🎬</div>
+                        <div class="skill-name" data-key="skills.sliding.video">Video Editing</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="ui">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name" data-key="skills.sliding.ui">UI/UX Design</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="office">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name" data-key="skills.sliding.office">Microsoft 365</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
                     
                     <!-- Third set for perfect seamless loop -->
-                    <div class="tech-logo">🌐 Web Development</div>
-                    <div class="tech-logo">🤖 AI Development</div>
-                    <div class="tech-logo">💬 AI Prompting</div>
-                    <div class="tech-logo">🗄️ SQL/MySQL</div>
-                    <div class="tech-logo">🌐 Django</div>
-                    <div class="tech-logo">📱 Flutter</div>
-                    <div class="tech-logo">⚡ Full-stack Developer</div>
-                    <div class="tech-logo">🎨 UI/UX</div>
-                    <div class="tech-logo">📊 Git GitHub</div>
-                    <div class="tech-logo">🚀 Deployment</div>
-                    <div class="tech-logo">🐍 Python</div>
-                    <div class="tech-logo">🎨 Photoshop</div>
-                    <div class="tech-logo">🔧 Arduino</div>
-                    <div class="tech-logo">🎬 CapCut</div>
-                    <div class="tech-logo">📊 Excel</div>
-                    <div class="tech-logo">🎥 Video Editing</div>
-                    <div class="tech-logo">🖼️ Image Editing</div>
+                    <div class="skill-item-sliding" data-skill="python">
+                        <div class="skill-icon">🐍</div>
+                        <div class="skill-name" data-key="skills.sliding.python">Python</div>
+                        <div class="skill-highlight-bar"></div>
                             </div>
+                    <div class="skill-item-sliding" data-skill="web">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-name" data-key="skills.sliding.web">Web Development</div>
+                        <div class="skill-highlight-bar"></div>
+            </div>
+                    <div class="skill-item-sliding" data-skill="ai">
+                        <div class="skill-icon">🤖</div>
+                        <div class="skill-name" data-key="skills.sliding.ai">AI Development</div>
+                        <div class="skill-highlight-bar"></div>
+        </div>
+                    <div class="skill-item-sliding" data-skill="telegram">
+                        <div class="skill-icon">📱</div>
+                        <div class="skill-name" data-key="skills.sliding.telegram">Telegram Bots</div>
+                        <div class="skill-highlight-bar"></div>
+                        </div>
+                    <div class="skill-item-sliding" data-skill="django">
+                        <div class="skill-icon">🎯</div>
+                        <div class="skill-name" data-key="skills.sliding.django">Django</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="sql">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-name" data-key="skills.sliding.sql">SQL/MySQL</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="git">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name" data-key="skills.sliding.git">Git & GitHub</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                    <div class="skill-item-sliding" data-skill="prompt">
+                        <div class="skill-icon">💬</div>
+                        <div class="skill-name" data-key="skills.sliding.prompt">Prompt Engineering</div>
+                        <div class="skill-highlight-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Hover Card -->
+            <div class="skill-hover-card" id="skill-hover-card">
+                <div class="hover-card-content">
+                    <div class="hover-card-header">
+                        <div class="hover-skill-icon"></div>
+                        <div class="hover-skill-title"></div>
+                        <div class="hover-skill-level"></div>
+                    </div>
+                    <div class="hover-card-body">
+                        <div class="experience-section">
+                            <h4 data-key="skills.hover.experience_level">سطح تجربه</h4>
+                            <span class="experience-text"></span>
+                            <div class="experience-bar">
+                                <div class="experience-fill"></div>
+                            </div>
+                        </div>
+                        <div class="projects-section">
+                            <h4 data-key="skills.hover.related_projects">پروژه‌های مرتبط</h4>
+                            <div class="related-projects"></div>
+                        </div>
+                        <div class="description-section">
+                            <p class="skill-description"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hover-card-particles"></div>
             </div>
         </div>
     </section>
-    <!-- Skill Details Modal -->
-    <div id="skill-modal" class="skill-modal">
-        <div class="skill-modal-content">
-            <div class="skill-modal-header">
-                <h3 id="skill-modal-title">Skill Details</h3>
-                <button class="skill-modal-close">&times;</button>
-                        </div>
-            <div class="skill-modal-body">
-                <div class="skill-modal-icon" id="skill-modal-icon"></div>
-                <div class="skill-modal-info">
-                    <p id="skill-modal-description">Skill description will appear here.</p>
-                    <div class="skill-modal-level">
-                        <span>Level: </span>
-                        <span id="skill-modal-level">Intermediate</span>
-                    </div>
-                    <div class="skill-modal-experience">
-                        <span>Experience: </span>
-                        <span id="skill-modal-experience">2+ years</span>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
                 
+    <!-- Fullscreen Image Modal -->
+    <div id="fullscreen-image-modal" class="fullscreen-image-modal" role="dialog" aria-hidden="true">
+        <div class="fullscreen-image-container">
+            <button class="fullscreen-close-btn" aria-label="بستن">&times;</button>
+            <button class="fullscreen-nav-btn fullscreen-prev-btn" id="fullscreen-prev-btn" aria-label="تصویر قبلی">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+            </button>
+            <button class="fullscreen-nav-btn fullscreen-next-btn" id="fullscreen-next-btn" aria-label="تصویر بعدی">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                </svg>
+            </button>
+            <img id="fullscreen-image" src="" alt="تصویر بزرگ">
+            <div class="fullscreen-image-info">
+                <span id="fullscreen-image-counter">1 / 3</span>
+            </div>
+            <div class="fullscreen-image-bg-animation"></div>
+        </div>
+    </div>
+
     <!-- Project Details Modal -->
     <div id="project-modal" class="project-modal" role="dialog" aria-labelledby="project-modal-title" aria-hidden="true">
         <div class="project-modal-content">
@@ -435,6 +614,12 @@
                 <div class="project-modal-gallery">
                     <div class="project-modal-main-image">
                         <img id="project-modal-main-img" src="" alt="تصویر اصلی پروژه">
+                        <button class="image-zoom-btn" id="image-zoom-btn" aria-label="بزرگنمایی تصویر">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                            </svg>
+                        </button>
                     </div>
                     <div class="project-modal-thumbnails" id="project-modal-thumbnails">
                         <!-- Thumbnails will be populated by JavaScript -->
@@ -576,7 +761,7 @@
     <!-- Achievements Section -->
     <section id="achievements" class="section" role="region" aria-labelledby="achievements-heading">
         <div class="container">
-            <h2 id="achievements-heading" class="section-title" data-key="achievements.title">افتخارات</h2>
+            <h2 id="achievements-heading" class="section-title" data-key="achievements.title">افتخارات و گواهینامه ها</h2>
             
             <!-- Sharif University Achievement -->
             <div class="sharif-achievement">
@@ -587,7 +772,7 @@
                         <h3 data-key="achievements.sharif.title">دانشگاه صنعتی شریف</h3>
                         <p data-key="achievements.sharif.ranking">رتبه 3 در ایران و 548 در جهان</p>
                         <div class="sharif-achievement-details">
-                            <p data-key="achievements.sharif.description">من جزو 3 دانشجوی برتر دوره‌های دانشگاه صنعتی شریف بودم</p>
+                            <p data-key="achievements.sharif.description">من 2 دوره جزو بهترین دانش جویان دوره های دانش آموزی دانشگاه شریف بودم</p>
                         </div>
                         <div class="sharif-stats">
                             <div class="sharif-stat">
@@ -664,16 +849,7 @@
                     </div>
                 </div>
                 
-                <div class="certificate-card london">
-                    <div class="certificate-background"></div>
-                    <div class="certificate-overlay">
-                        <div class="certificate-icon html-icon"></div>
-                        <span class="certificate-date"></span>
-                        <div class="certificate-hover-button">
-                            <a href="./certificates/ResponsiveWebsiteBasicsCodewithHTML,CSS,andJavaScript.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
-                        </div>
-                    </div>
-                </div>
+
                 
                 <div class="certificate-card michigan">
                     <div class="certificate-background"></div>
@@ -705,6 +881,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="certificate-card london">
+                    <div class="certificate-background"></div>
+                    <div class="certificate-overlay">
+                        <div class="certificate-icon html-icon"></div>
+                        <span class="certificate-date"></span>
+                        <div class="certificate-hover-button">
+                            <a href="./certificates/ResponsiveWebsiteBasicsCodewithHTML,CSS,andJavaScript.pdf" class="details-link" target="_blank" data-key="achievements.certificate.details">جزئیات</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="certificate-card michigan">
                     <div class="certificate-background"></div>
                     <div class="certificate-overlay">
@@ -729,8 +915,8 @@
                     <div class="timeline-content">
                         <h3 class="timeline-title" data-key="education.highschool.title">دبیرستان دکتر علی‌شریعتی</h3>
                         <p class="timeline-subtitle" data-key="education.highschool.subtitle">دانش‌آموز پایه دوازدهم</p>
-                        <p class="timeline-description" data-key="education.highschool.description">از سال 2021 تا کنون در رشته ریاضی و فیزیک</p>
-                        <span class="timeline-date">2021 - 2024</span>
+                        <p class="timeline-description" data-key="education.highschool.description">از سال 2022 تا کنون در رشته ریاضی و فیزیک</p>
+                        <span class="timeline-date">2022 - 2025</span>
                     </div>
                 </div>
             </div>
@@ -756,7 +942,7 @@
                                 <p>mohammadrezaabedinpoor6@gmail.com</p>
                             </div>
                         </a>
-                        <a href="tel:+989123456789" class="contact-link phone">
+                        <a href="tel:+989963476373" class="contact-link phone">
                             <span class="contact-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -764,10 +950,10 @@
                             </span>
                             <div class="contact-details">
                                 <h4 data-key="contact.phone.title">تلفن</h4>
-                                <p>+98 912 345 6789</p>
+                                <p class="phone-number">+98 996 347 6373</p>
                             </div>
                         </a>
-                        <a href="https://t.me/yourusername" class="contact-link telegram">
+                        <a href="https://t.me/@Pleasechangetheworld" class="contact-link telegram">
                             <span class="contact-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
@@ -778,7 +964,7 @@
                                 <p data-key="contact.telegram.label">Telegram</p>
                             </div>
                         </a>
-                        <a href="https://wa.me/989123456789" class="contact-link whatsapp">
+                        <a href="https://wa.me/989963476373" class="contact-link whatsapp">
                             <span class="contact-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
@@ -789,15 +975,15 @@
                                 <p data-key="contact.whatsapp.label">WhatsApp</p>
                             </div>
                         </a>
-                        <a href="https://youtube.com/@yourusername" class="contact-link youtube">
+                        <a href="https://github.com/MOHAMMADREZAABEDINPOOR" class="contact-link github">
                             <span class="contact-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
                             </span>
                             <div class="contact-details">
-                                <h4 data-key="contact.youtube.title">YouTube</h4>
-                                <p data-key="contact.youtube.label">YouTube</p>
+                                <h4 data-key="contact.github.title">GitHub</h4>
+                                <p data-key="contact.github.label">GitHub</p>
                             </div>
                         </a>
                         <div class="contact-link location">
@@ -808,7 +994,7 @@
                             </span>
                             <div class="contact-details">
                                 <h4 data-key="contact.location.title">آدرس</h4>
-                                <p data-key="contact.location.address">تهران، ایران</p>
+                                <p data-key="contact.location.address">رشت ، ایران</p>
                             </div>
                         </div>
                     </div>
@@ -822,7 +1008,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p data-key="footer.copyright">&copy; 2024 محمدرضا عابدین‌پور. تمام حقوق محفوظ است.</p>
+                    <p data-key="footer.copyright">&copy; 2025 محمدرضا عابدین‌پور. تمام حقوق محفوظ است.</p>
                 </div>
                 <div class="footer-links">
                     <a href="mailto:mohammadrezaabedinpoor6@gmail.com" class="footer-link email" aria-label="Email">
@@ -830,24 +1016,24 @@
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                     </a>
-                    <a href="tel:+989123456789" class="footer-link phone" aria-label="Phone">
+                    <a href="tel:+98-996-347-6373" class="footer-link phone" aria-label="Phone">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
                     </a>
-                    <a href="https://t.me/yourusername" class="footer-link telegram" aria-label="Telegram">
+                    <a href="https://t.me/@Pleasechangetheworld" class="footer-link telegram" aria-label="Telegram">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                         </svg>
                     </a>
-                    <a href="https://wa.me/989123456789" class="footer-link whatsapp" aria-label="WhatsApp">
+                    <a href="https://wa.me/+989963476373" class="footer-link whatsapp" aria-label="WhatsApp">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
                         </svg>
                     </a>
-                    <a href="https://youtube.com/@yourusername" class="footer-link youtube" aria-label="YouTube">
+                    <a href="https://github.com/MOHAMMADREZAABEDINPOOR" class="footer-link github" aria-label="GitHub">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                     </a>
                 </div>
@@ -855,20 +1041,6 @@
         </div>
     </footer>
 
-    <!-- Skill Details Popup -->
-    <div class="skill-popup-overlay" id="skill-popup-overlay"></div>
-    <div class="skill-popup" id="skill-popup">
-        <div class="skill-popup-header">
-            <div class="skill-popup-title">
-                <span class="skill-popup-icon" id="popup-icon">🤖</span>
-                <span id="popup-title">AI Development</span>
-            </div>
-            <button class="skill-popup-close" id="popup-close">×</button>
-        </div>
-        <div class="skill-popup-content" id="popup-content">
-            توضیحات مهارت اینجا نمایش داده می‌شود...
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="./assets/js/script.js"></script>

@@ -20,6 +20,7 @@
     "title": "12. Klässler | KI & Programmierung Enthusiast | Offen für Praktika",
     "description": "Neugieriger Schüler mit Leidenschaft für KI und Webentwicklung; programmiere seit 2021; fokussiert auf praktische kleine Projekte und kontinuierliches Lernen.",
     "contact": "Kontaktieren",
+    "view": "CV ansehen",
     "download": "CV herunterladen",
     "metric": {
       "experience": "Jahre Erfahrung",
@@ -47,8 +48,8 @@
         "description": "Immer neue Technologien lernen"
       },
       "teamwork": {
-        "title": "Teamarbeit",
-        "description": "Erfahrung in kollaborativen Projekten"
+        "title": "Lösung täglicher Probleme",
+        "description": "Erstellung verschiedener Automatisierungen für wiederholende Aufgaben"
       },
       "innovation": {
         "title": "Innovationsfokus",
@@ -59,6 +60,167 @@
   "skills": {
     "title": "Fähigkeiten",
     "heading": "Fähigkeiten",
+    "experience_text": "3+ Jahre Erfahrung in der Softwareentwicklung",
+    "sliding": {
+      "python": "Python",
+      "web": "Webentwicklung",
+      "ai": "KI-Entwicklung",
+      "telegram": "Telegram Bots",
+      "django": "Django",
+      "sql": "SQL/MySQL",
+      "git": "Git & GitHub",
+      "prompt": "Prompt-Engineering",
+      "scraping": "Web Scraping",
+      "deployment": "Bereitstellung",
+      "arduino": "Arduino",
+      "flutter": "Flutter",
+      "photoshop": "Photoshop",
+      "video": "Videobearbeitung",
+      "ui": "UI/UX Design",
+      "office": "Microsoft 365"
+    },
+    "hover": {
+      "experience_level": "Erfahrungslevel",
+      "related_projects": "Verwandte Projekte"
+    },
+    "skillsData": {
+      "python": {
+        "title": "Python Programmierung",
+        "icon": "🐍",
+        "level": "Mittel",
+        "experienceText": "3+ Jahre",
+        "description": "Interaktive Programmierung, Spielentwicklung, Automatisierung und Datenwissenschaft-Grundlagen. Erfahrung mit verschiedenen Python-Bibliotheken für praktische Projekte.",
+        "projects": ["Intelligenter Chatbot", "Telegram Bot", "Web Scraping", "Automatisierung"]
+      },
+      "web": {
+        "title": "Webentwicklung",
+        "icon": "🌐", 
+        "level": "Mittel",
+        "experienceText": "3+ Jahre",
+        "description": "Responsive Webentwicklung mit HTML, CSS und JavaScript. Modernes und interaktives UI-Design mit Fokus auf Webstandards.",
+        "projects": ["Persönliche Website", "Schulblog", "Admin Panel", "Benutzeroberfläche"]
+      },
+      "ai": {
+        "title": "KI-Entwicklung",
+        "icon": "🤖",
+        "level": "Stark", 
+        "experienceText": "2+ Jahre",
+        "description": "KI-unterstützte Entwicklung mit Cursor, GitHub Copilot und ChatGPT für Coding, Code-Review und Dokumentation.",
+        "projects": ["KI Chatbot", "Telegram Agent", "Prompt Engineering", "Code Review"]
+      },
+      "telegram": {
+        "title": "Telegram Bots",
+        "icon": "📱",
+        "level": "Stark",
+        "experienceText": "3+ Monate",
+        "description": "Intelligente Telegram-Bot-Entwicklung, Webhooks und Planungssysteme. Praktische Automatisierungen zur Workflow-Verbesserung.",
+        "projects": ["Verkaufsagent", "Support Bot", "Automatisierung", "Web Dashboard"]
+      },
+      "django": {
+        "title": "Django Framework",
+        "icon": "🎯",
+        "level": "Mittel",
+        "experienceText": "2+ Jahre",
+        "description": "Webanwendungsentwicklung mit Django, MVC-Architektur und Datenbankintegration. Content-Management-Systeme und RESTful APIs erstellen.",
+        "projects": ["Chatbot Web App", "Blog System", "Management Panel", "API Service"]
+      },
+      "sql": {
+        "title": "SQL & Datenbank",
+        "icon": "🗄️",
+        "level": "Mittel",
+        "experienceText": "2+ Jahre",
+        "description": "Datenbankschema-Design und komplexe Abfragen schreiben. Arbeit mit MySQL und strukturiertem Datenmanagement.",
+        "projects": ["Benutzerdatenbank", "Authentifizierungssystem", "Content Management", "Berichterstattung"]
+      },
+      "git": {
+        "title": "Git & GitHub",
+        "icon": "📊",
+        "level": "Mittel",
+        "experienceText": "1+ Jahr",
+        "description": "Versionskontrolle mit Git, Arbeit mit Branches und Pull Requests. Teamzusammenarbeit und Open-Source-Projektmanagement.",
+        "projects": ["Projektmanagement", "Teamzusammenarbeit", "Code Review", "CI/CD"]
+      },
+      "prompt": {
+        "title": "Prompt Engineering",
+        "icon": "💬",
+        "level": "Mittel",
+        "experienceText": "1+ Jahr",
+        "description": "Prompt-Schreiben mit ChatGPT, Cursor und Codex. Effektive Anweisungen entwerfen für beste Ergebnisse von KI-Modellen.",
+        "projects": ["Intelligenter Chatbot", "KI Agent", "Code Generator", "Dokumentation"]
+      },
+      "scraping": {
+        "title": "Web Scraping",
+        "icon": "🕷️",
+        "level": "Mittel",
+        "experienceText": "2+ Monate",
+        "description": "Datensammlung von Websites mit Python und Scraping-Bibliotheken. Strukturierte Informationen extrahieren und Online-Daten verarbeiten.",
+        "projects": ["Preissammlung", "Auto News", "Überwachung", "Datenanalyse"]
+      },
+      "deployment": {
+        "title": "Bereitstellung",
+        "icon": "🚀",
+        "level": "Mittel",
+        "experienceText": "3+ Monate",
+        "description": "Projektbereitstellung auf Shared Hosting und VPS. Domain-Setup, SSL und Telegram Webhooks. Servermanagement und Performance-Optimierung.",
+        "projects": ["Web App Bereitstellung", "Server Setup", "SSL & Domain", "Überwachung"]
+      },
+      "deploy": {
+        "title": "Bereitstellung",
+        "icon": "🚀",
+        "level": "Mittel",
+        "experienceText": "3+ Monate",
+        "description": "Projektbereitstellung auf Shared Hosting und VPS. Domain-Setup, SSL und Telegram Webhooks. Servermanagement und Performance-Optimierung.",
+        "projects": ["Web App Bereitstellung", "Server Setup", "SSL & Domain", "Überwachung"]
+      },
+      "arduino": {
+        "title": "Arduino & IoT",
+        "icon": "🔧",
+        "level": "Anfänger",
+        "experienceText": "1+ Jahr",
+        "description": "Mikrocontroller-Programmierung, Arbeit mit Sensoren (LM35, Ultraschall) und IoT-Projekten. Interaktive Systeme und Hardware-Automatisierung bauen.",
+        "projects": ["Temperatursensor", "Entfernungsmesser", "Hausautomatisierung", "IoT Projekt"]
+      },
+      "flutter": {
+        "title": "Flutter Entwicklung",
+        "icon": "📱",
+        "level": "Anfänger",
+        "experienceText": "2+ Monate",
+        "description": "Mobile App-Entwicklung mit Flutter. Schöne und leistungsstarke Benutzeroberflächen für Android und iOS Plattformen erstellen.",
+        "projects": ["Mobile App", "Benutzeroberfläche", "Cross Platform", "Prototyp"]
+      },
+      "photoshop": {
+        "title": "Photoshop & Design",
+        "icon": "🎨",
+        "level": "Mittel",
+        "experienceText": "2+ Jahre",
+        "description": "Foto-Retusche, Grafikdesign und Bildbearbeitung. Arbeit mit erweiterten Photoshop-Tools zur Erstellung professioneller visueller Inhalte.",
+        "projects": ["Foto-Retusche", "Logo Design", "Werbebanner", "UI Mockup"]
+      },
+      "video": {
+        "title": "Videobearbeitung",
+        "icon": "🎬",
+        "level": "Mittel",
+        "experienceText": "6+ Monate",
+        "description": "Videobearbeitung mit CapCut, YouTube-Content-Erstellung und Bildungsvideos. Audio, Video und visuelle Effekte kombinieren.",
+        "projects": ["YouTube Video", "Bildungsinhalt", "Werbeteaser", "Musik Edit"]
+      },
+      "ui": {
+        "title": "UI/UX Design",
+        "icon": "🎨",
+        "level": "Mittel",
+        "experienceText": "1+ Jahr",
+        "description": "Benutzeroberflächen- und Benutzererfahrungsdesign. Mockups, Wireframes und interaktive Prototypen für Web und Mobile erstellen.",
+        "projects": ["Website Design", "Mobile App", "Dashboard", "Landing Page"]
+      },
+      "office": {
+        "title": "Microsoft 365",
+        "icon": "📊",
+        "level": "Mittel",
+        "experienceText": "2+ Jahre",
+        "description": "Microsoft 365 Software-Suite für Büro-Produktivität verwenden. Arbeit mit Word, Excel, PowerPoint und Team-Kollaborationstools.",
+        "projects": ["Dokumentation", "Berichterstattung", "Präsentation", "Datenanalyse"]
+      }
+    },
     "categories": {
       "core": "Kern",
       "tools": "Tools & Plattformen",
@@ -263,7 +425,7 @@
     "sharif": {
       "title": "Sharif Technische Universität",
       "ranking": "Rang 3 im Iran und 548 weltweit",
-      "description": "Ich war einer der Top 3 Studenten in Sharif Universitätskursen",
+      "description": "Ich war einer der besten Studenten in 2 Kursen der Sharif University Studentenprogramme",
       "rank_iran": "Rang im Iran",
       "rank_global": "Globaler Rang"
     },
@@ -294,10 +456,10 @@
     "highschool": {
       "title": "Dr. Ali Shariati Gymnasium",
       "subtitle": "12. Klässler",
-      "description": "Von 2021 bis heute in Mathematik und Physik"
+      "description": "Von 2022 bis heute in Mathematik und Physik"
     },
     "school": "Dr. Ali Shariati Gymnasium",
-    "period": "2021 - 2024",
+    "period": "2022 - 2025",
     "grade": "10. bis 12. Klasse - Mathematik und Physik",
     "details": [
       "Aktives Mitglied des Robotik-Teams",
@@ -315,7 +477,7 @@
     },
     "location": {
       "title": "Adresse",
-      "address": "Teheran, Iran"
+      "address": "Rasht, Iran"
     },
     "subtitle": "Lass uns reden",
     "description": "Für Praktika, Projektkooperationen oder andere Fragen würde ich mich freuen, mit dir in Kontakt zu treten.",
@@ -341,7 +503,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2024 Mohammadreza Abedinpoor. Alle Rechte vorbehalten.",
+    "copyright": "© 2025 Mohammadreza Abedinpoor. Alle Rechte vorbehalten.",
     "sourceCode": "Quellcode"
   },
   "aria": {

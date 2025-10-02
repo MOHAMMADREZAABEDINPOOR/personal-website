@@ -138,6 +138,7 @@ async function loadTranslations() {
             'hero.title': 'دانش‌آموز پایه دوازدهم | علاقه‌مند به هوش مصنوعی و برنامه‌نویسی | جویای کارآموزی',
             'hero.description': 'دانش‌آموز کنجکاو با علاقه به AI و وب؛ من از سال 2021 برنامه‌نویسی می‌کنم؛ تمرکز روی پروژه‌های کوچک کاربردی و یادگیری مستمر.',
             'hero.contact': 'تماس با من',
+            'hero.view': 'مشاهده رزومه',
             'hero.download': 'دانلود رزومه',
             'hero.metric.experience': 'سال تجربه',
             'hero.metric.projects': 'پروژه عملی',
@@ -166,6 +167,7 @@ async function loadTranslations() {
             'hero.title': '12th Grade Student | AI & Programming Enthusiast | Seeking Internship',
             'hero.description': 'Curious student passionate about AI and web development; I\'ve been programming since 2021; focused on practical projects and continuous learning.',
             'hero.contact': 'Contact Me',
+            'hero.view': 'View Resume',
             'hero.download': 'Download Resume',
             'hero.metric.experience': 'Years Experience',
             'hero.metric.projects': 'Practical Projects',
@@ -228,6 +230,7 @@ function updateTextContent(langData) {
     updateElementText('[data-key="hero.title"]', langData.hero?.title);
     updateElementText('[data-key="hero.description"]', langData.hero?.description);
     updateElementText('[data-key="hero.contact"]', langData.hero?.contact);
+    updateElementText('[data-key="hero.view"]', langData.hero?.view);
     updateElementText('[data-key="hero.download"]', langData.hero?.download);
     updateElementText('[data-key="hero.metric.experience"]', langData.hero?.metric?.experience);
     updateElementText('[data-key="hero.metric.projects"]', langData.hero?.metric?.projects);
@@ -257,6 +260,29 @@ function updateTextContent(langData) {
     updateElementText('[data-key="about.ethics.teamwork.description"]', langData.about?.ethics?.teamwork?.description);
     updateElementText('[data-key="about.ethics.innovation.title"]', langData.about?.ethics?.innovation?.title);
     updateElementText('[data-key="about.ethics.innovation.description"]', langData.about?.ethics?.innovation?.description);
+    
+    // Update skills section
+    updateElementText('[data-key="skills.experience_text"]', langData.skills?.experience_text);
+    
+    // Update sliding skills
+    if (langData.skills?.sliding) {
+        updateElementText('[data-key="skills.sliding.python"]', langData.skills.sliding.python);
+        updateElementText('[data-key="skills.sliding.web"]', langData.skills.sliding.web);
+        updateElementText('[data-key="skills.sliding.ai"]', langData.skills.sliding.ai);
+        updateElementText('[data-key="skills.sliding.telegram"]', langData.skills.sliding.telegram);
+        updateElementText('[data-key="skills.sliding.django"]', langData.skills.sliding.django);
+        updateElementText('[data-key="skills.sliding.sql"]', langData.skills.sliding.sql);
+        updateElementText('[data-key="skills.sliding.git"]', langData.skills.sliding.git);
+        updateElementText('[data-key="skills.sliding.prompt"]', langData.skills.sliding.prompt);
+        updateElementText('[data-key="skills.sliding.scraping"]', langData.skills.sliding.scraping);
+        updateElementText('[data-key="skills.sliding.deployment"]', langData.skills.sliding.deployment);
+        updateElementText('[data-key="skills.sliding.arduino"]', langData.skills.sliding.arduino);
+        updateElementText('[data-key="skills.sliding.flutter"]', langData.skills.sliding.flutter);
+        updateElementText('[data-key="skills.sliding.photoshop"]', langData.skills.sliding.photoshop);
+        updateElementText('[data-key="skills.sliding.video"]', langData.skills.sliding.video);
+        updateElementText('[data-key="skills.sliding.ui"]', langData.skills.sliding.ui);
+        updateElementText('[data-key="skills.sliding.office"]', langData.skills.sliding.office);
+    }
     
     // Update achievements section
     updateElementText('[data-key="achievements.sharif.title"]', langData.achievements?.sharif?.title);
@@ -350,6 +376,12 @@ function changeLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
     updateLanguageElements();
+    
+    // Re-initialize skills system with new language data
+    if (typeof initInteractiveSkills === 'function') {
+        initInteractiveSkills();
+    }
+    
     console.log('Language changed to:', lang);
 }
 
@@ -449,162 +481,205 @@ function initLanguageDropdown() {
     });
 }
 
-// ===== Skills Animation =====
-function initSkillsAnimation() {
-    const skillElements = document.querySelectorAll('.floating-skill');
+// ===== Interactive Skills System =====
+function initInteractiveSkills() {
+    const skillItems = document.querySelectorAll('.skill-item-sliding');
+    const hoverCard = document.getElementById('skill-hover-card');
     
-    skillElements.forEach(skill => {
-        skill.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateX(-50%) scale(1.05)';
-            this.style.zIndex = '20';
+    // Get skill data from translations based on current language
+    function getSkillsData() {
+        const currentTranslations = translations[currentLang] || translations['fa'];
+        const skillsData = currentTranslations.skills?.skillsData || {};
+        
+        // Add experience percentages for each skill
+        const enhancedSkillsData = {};
+        Object.keys(skillsData).forEach(key => {
+            enhancedSkillsData[key] = {
+                ...skillsData[key],
+                experience: getExperiencePercentage(key)
+            };
         });
         
-        skill.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateX(-50%) scale(1)';
-            this.style.zIndex = '1';
+        return enhancedSkillsData;
+    }
+    
+    function getExperiencePercentage(skillKey) {
+        const experienceMap = {
+            'python': 65,
+            'web': 85,
+            'ai': 90,
+            'telegram': 40,
+            'django': 85,
+            'sql': 65,
+            'git': 60,
+            'prompt': 50,
+            'scraping': 50,
+            'deployment': 65,
+            'arduino': 40,
+            'flutter': 30,
+            'photoshop': 70,
+            'video': 60,
+            'ui': 70,
+            'office': 70
+        };
+        return experienceMap[skillKey] || 50;
+    }
+    
+    let currentActiveSkill = null;
+    let hoverTimeout = null;
+    
+    // Initialize hover interactions
+    skillItems.forEach(skillItem => {
+        const skillKey = skillItem.getAttribute('data-skill');
+        const skillsData = getSkillsData();
+        const skillData = skillsData[skillKey];
+        
+        if (!skillData) return;
+        
+        skillItem.addEventListener('mouseenter', (e) => {
+            clearTimeout(hoverTimeout);
+            
+            // Remove active class from previous skill
+            if (currentActiveSkill && currentActiveSkill !== skillItem) {
+                currentActiveSkill.classList.remove('active');
+            }
+            
+            // Add active class to current skill
+            skillItem.classList.add('active');
+            currentActiveSkill = skillItem;
+            
+            // Show hover card with animation delay
+            setTimeout(() => {
+                showSkillHoverCard(skillData, e);
+            }, 200);
+        });
+        
+        skillItem.addEventListener('mouseleave', () => {
+            hoverTimeout = setTimeout(() => {
+                hideSkillHoverCard();
+                if (currentActiveSkill === skillItem) {
+                    skillItem.classList.remove('active');
+                    currentActiveSkill = null;
+                }
+            }, 300);
         });
     });
     
-    // Initialize skill details popup
-    initSkillDetailsPopup();
+    // Hover card mouse events
+    if (hoverCard) {
+        hoverCard.addEventListener('mouseenter', () => {
+            clearTimeout(hoverTimeout);
+        });
+        
+        hoverCard.addEventListener('mouseleave', () => {
+            hideSkillHoverCard();
+            if (currentActiveSkill) {
+                currentActiveSkill.classList.remove('active');
+                currentActiveSkill = null;
+            }
+        });
+    }
+    
+    // Close hover card on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && hoverCard && hoverCard.classList.contains('active')) {
+            hideSkillHoverCard();
+            if (currentActiveSkill) {
+                currentActiveSkill.classList.remove('active');
+                currentActiveSkill = null;
+            }
+        }
+    });
+    
+    function showSkillHoverCard(skillData, event) {
+        if (!hoverCard) return;
+        
+        // Update card content
+        const iconElement = hoverCard.querySelector('.hover-skill-icon');
+        const titleElement = hoverCard.querySelector('.hover-skill-title');
+        const levelElement = hoverCard.querySelector('.hover-skill-level');
+        const experienceBar = hoverCard.querySelector('.experience-fill');
+        const experienceText = hoverCard.querySelector('.experience-text');
+        const projectsContainer = hoverCard.querySelector('.related-projects');
+        const descriptionElement = hoverCard.querySelector('.skill-description');
+        
+        // Update translatable elements in hover card
+        const experienceLevelHeader = hoverCard.querySelector('[data-key="skills.hover.experience_level"]');
+        const relatedProjectsHeader = hoverCard.querySelector('[data-key="skills.hover.related_projects"]');
+        
+        if (experienceLevelHeader && translations[currentLang]?.skills?.hover?.experience_level) {
+            experienceLevelHeader.textContent = translations[currentLang].skills.hover.experience_level;
+        }
+        if (relatedProjectsHeader && translations[currentLang]?.skills?.hover?.related_projects) {
+            relatedProjectsHeader.textContent = translations[currentLang].skills.hover.related_projects;
+        }
+        
+        if (iconElement) iconElement.textContent = skillData.icon;
+        if (titleElement) titleElement.textContent = skillData.title;
+        if (levelElement) levelElement.textContent = skillData.level;
+        if (experienceText) experienceText.textContent = skillData.experienceText;
+        if (descriptionElement) descriptionElement.textContent = skillData.description;
+        
+        // Animate experience bar
+        if (experienceBar) {
+            experienceBar.style.width = '0%';
+            setTimeout(() => {
+                experienceBar.style.width = skillData.experience + '%';
+            }, 300);
+        }
+        
+        // Update projects
+        if (projectsContainer) {
+            projectsContainer.innerHTML = '';
+            skillData.projects.forEach((project, index) => {
+                const projectTag = document.createElement('span');
+                projectTag.className = 'project-tag';
+                projectTag.textContent = project;
+                projectTag.style.animationDelay = (index * 0.1) + 's';
+                projectsContainer.appendChild(projectTag);
+            });
+        }
+        
+        // Show card with stunning animation
+        hoverCard.classList.add('active');
+        
+        // Add particle effects
+        createHoverParticles();
+    }
+    
+    function hideSkillHoverCard() {
+        if (!hoverCard) return;
+        hoverCard.classList.remove('active');
+    }
+    
+    function createHoverParticles() {
+        const particlesContainer = hoverCard.querySelector('.hover-card-particles');
+        if (!particlesContainer) return;
+        
+        // Clear existing particles
+        particlesContainer.innerHTML = '';
+        
+        // Create floating particles
+        for (let i = 0; i < 6; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'floating-particle';
+            particle.style.cssText = `
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: ${i % 2 === 0 ? 'var(--primary-color)' : 'var(--secondary-color)'};
+                border-radius: 50%;
+                top: ${Math.random() * 80 + 10}%;
+                left: ${Math.random() * 80 + 10}%;
+                animation: particleFloat ${3 + Math.random() * 3}s ease-in-out infinite;
+                animation-delay: ${Math.random() * 2}s;
+                opacity: 0.7;
+            `;
+            particlesContainer.appendChild(particle);
+        }
+    }
 }
 
-// ===== Skill Details Popup =====
-function initSkillDetailsPopup() {
-    const popup = document.getElementById('skill-popup');
-    const overlay = document.getElementById('skill-popup-overlay');
-    const closeBtn = document.getElementById('popup-close');
-    const detailBtns = document.querySelectorAll('.skill-details-btn');
-    
-    // Skill details data
-    const skillDetails = {
-        'ai': {
-            icon: '🤖',
-            title: 'AI-Assisted Development',
-            content: 'من بیشتر کارهای برنامه‌نویسی‌ام را با هوش مصنوعی انجام می‌دهم. استفاده از Cursor، GitHub Copilot و ChatGPT برای کدنویسی، بررسی کد، نوشتن تست‌ها و مستندات. این رویکرد باعث افزایش سرعت و کیفیت کدنویسی من شده است.'
-        },
-        'python': {
-            icon: '🐍',
-            title: 'Python Programming',
-            content: 'برنامه‌نویسی تعاملی، توسعه بازی‌ها، اتوماسیون و مبانی علوم داده. تجربه کار با کتابخانه‌های مختلف Python برای پروژه‌های عملی و کاربردی.'
-        },
-        'web': {
-            icon: '🌐',
-            title: 'Web Development',
-            content: 'توسعه وب ریسپانسیو با HTML، CSS و JavaScript. طراحی رابط‌های کاربری مدرن و تعاملی با تمرکز بر استانداردهای وب و تجربه کاربری بهینه.'
-        },
-        'telegram': {
-            icon: '📱',
-            title: 'Telegram Bots & Automation',
-            content: 'توسعه ربات‌های تلگرام هوشمند، webhook ها و سیستم‌های زمان‌بندی. ایجاد اتوماسیون‌های کاربردی برای بهبود جریان کار و ارتباطات.'
-        },
-        'django': {
-            icon: '🎯',
-            title: 'Django Framework',
-            content: 'توسعه اپلیکیشن‌های وب با Django، معماری MVC و یکپارچه‌سازی پایگاه داده. ساخت سیستم‌های مدیریت محتوا و API های RESTful.'
-        },
-        'git': {
-            icon: '📊',
-            title: 'Git & GitHub',
-            content: 'مدیریت نسخه‌ها با Git، کار با شاخه‌ها و Pull Request ها. همکاری تیمی و مدیریت پروژه‌های کد منبع باز.'
-        },
-        'sql': {
-            icon: '🗄️',
-            title: 'SQL & Database',
-            content: 'طراحی اسکیمای پایگاه داده و نوشتن کوئری‌های پیچیده. کار با MySQL و مدیریت داده‌های ساختاریافته.'
-        },
-        'arduino': {
-            icon: '🔧',
-            title: 'Arduino & IoT',
-            content: 'برنامه‌نویسی میکروکنترلرها، کار با سنسورها (LM35، Ultrasonic) و پروژه‌های اینترنت اشیا. ساخت سیستم‌های تعاملی و اتوماسیون سخت‌افزاری.'
-        },
-        'scraping': {
-            icon: '🕷️',
-            title: 'Web Scraping',
-            content: 'جمع‌آوری داده از وب‌سایت‌ها با استفاده از Python و کتابخانه‌های scraping. استخراج اطلاعات ساختاریافته و پردازش داده‌های آنلاین.'
-        },
-        'prompt': {
-            icon: '💬',
-            title: 'Prompt Engineering',
-            content: 'پرامپت نویسی با ChatGPT، Cursor و Codex. طراحی دستورالعمل‌های مؤثر برای دریافت بهترین نتایج از مدل‌های هوش مصنوعی. بهینه‌سازی تعامل با AI برای حل مسائل پیچیده.'
-        },
-        'photoshop': {
-            icon: '🎨',
-            title: 'Photoshop & Design',
-            content: 'رتوچ عکس‌ها، طراحی گرافیکی و ویرایش تصاویر. کار با ابزارهای پیشرفته فتوشاپ برای ایجاد محتوای بصری حرفه‌ای.'
-        },
-        'video': {
-            icon: '🎬',
-            title: 'Video Editing',
-            content: 'ویرایش ویدیو با CapCut، ساخت محتوای یوتیوب و تولید ویدیوهای آموزشی. ترکیب صدا، تصویر و افکت‌های بصری.'
-        },
-        'deploy': {
-            icon: '🚀',
-            title: 'Deployment & DevOps',
-            content: 'استقرار پروژه‌ها روی shared hosting و VPS. تنظیم دامنه، SSL و webhook های تلگرام. مدیریت سرور و بهینه‌سازی عملکرد.'
-        },
-        'flutter': {
-            icon: '📱',
-            title: 'Flutter Development',
-            content: 'توسعه اپلیکیشن‌های موبایل با Flutter. ایجاد رابط‌های کاربری زیبا و عملکرد بالا برای پلتفرم‌های Android و iOS.'
-        },
-        'react': {
-            icon: '⚛️',
-            title: 'React & Modern Web',
-            content: 'توسعه وب مدرن با React و Tailwind CSS. ساخت کامپوننت‌های قابل استفاده مجدد و اپلیکیشن‌های تک‌صفحه‌ای (SPA).'
-        },
-        'cpp': {
-            icon: '⚙️',
-            title: 'C/C++ Programming',
-            content: 'برنامه‌نویسی سیستم با C و C++. درک مفاهیم پایه‌ای برنامه‌نویسی سطح پایین و بهینه‌سازی عملکرد.'
-        },
-        'office': {
-            icon: '📊',
-            title: 'Microsoft 365',
-            content: 'استفاده از مجموعه نرم‌افزارهای Microsoft 365 برای بهره‌وری اداری. کار با Word، Excel، PowerPoint و ابزارهای همکاری تیمی.'
-        }
-    };
-    
-    // Show popup function
-    function showPopup(skillKey) {
-        const skill = skillDetails[skillKey];
-        if (skill) {
-            document.getElementById('popup-icon').textContent = skill.icon;
-            document.getElementById('popup-title').textContent = skill.title;
-            document.getElementById('popup-content').textContent = skill.content;
-            
-            popup.classList.add('active');
-            overlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-    
-    // Hide popup function
-    function hidePopup() {
-        popup.classList.remove('active');
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    
-    // Event listeners
-    detailBtns.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const skillKey = this.getAttribute('data-skill');
-            showPopup(skillKey);
-        });
-    });
-    
-    closeBtn.addEventListener('click', hidePopup);
-    overlay.addEventListener('click', hidePopup);
-    
-    // Close with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && popup.classList.contains('active')) {
-            hidePopup();
-        }
-    });
-}
 
 // ===== Enhanced Scroll Animations =====
 let lastScrollTop = 0;
@@ -741,10 +816,6 @@ async function init() {
         // Load translations first
         await loadTranslations();
         
-        // Initialize seamless tech banner animation after DOM is ready
-        setTimeout(() => {
-            initSeamlessTechBanner();
-        }, 100);
         
         // Apply saved theme
         applyTheme(currentTheme);
@@ -757,7 +828,7 @@ async function init() {
         initSmoothScrolling();
         initFormValidation();
         initLanguageDropdown();
-        initSkillsAnimation();
+        initInteractiveSkills();
         initScrollAnimations();
         handleErrors();
         registerServiceWorker();
@@ -790,6 +861,12 @@ async function init() {
         // Initialize project modal
         initProjectModal();
         
+        // Initialize fullscreen image modal
+        initFullscreenImageModal();
+        
+        // Initialize modal interactive effects
+        addModalInteractiveEffects();
+        
         console.log('Website initialized successfully!');
         
     } catch (error) {
@@ -820,7 +897,7 @@ function initSkillModal() {
             icon: '🌐',
             description: 'Frontend development with HTML, CSS, and JavaScript for personal websites and school blogs.',
             level: 'Intermediate',
-            experience: '2+ years'
+            experience: '3+ years'
         },
         'telegram': {
             title: 'Telegram Bots',
@@ -830,18 +907,18 @@ function initSkillModal() {
             experience: '2+ years'
         },
         'django': {
-            title: 'Django',
+            title: 'Django Framework',
             icon: '🎯',
             description: 'Django web framework for building CRUD applications with database integration.',
-            level: 'Beginner-Intermediate',
-            experience: '1+ year'
+            level: 'Intermediate',
+            experience: '2+ years'
         },
         'git': {
             title: 'Git & GitHub',
             icon: '📊',
             description: 'Version control with Git and GitHub, including branches and pull requests.',
-            level: 'Proficient',
-            experience: '3+ years'
+            level: 'Intermediate',
+            experience: '1+ year'
         },
         'sql': {
             title: 'SQL/MySQL',
@@ -851,11 +928,11 @@ function initSkillModal() {
             experience: '2+ years'
         },
         'arduino': {
-            title: 'Arduino',
+            title: 'Arduino & IoT',
             icon: '🔧',
             description: 'Arduino programming with LM35 temperature sensors and ultrasonic sensors.',
-            level: 'Intermediate',
-            experience: '2+ years'
+            level: 'Beginner',
+            experience: '1+ year'
         },
         'scraping': {
             title: 'Web Scraping',
@@ -872,18 +949,18 @@ function initSkillModal() {
             experience: '1+ year'
         },
         'photoshop': {
-            title: 'Photoshop',
+            title: 'Photoshop & Design',
             icon: '🎨',
             description: 'Photo editing and retouching with Photoshop for studio workflow.',
             level: 'Intermediate',
             experience: '2+ years'
         },
         'video': {
-            title: 'CapCut',
+            title: 'Video Editing',
             icon: '🎬',
             description: 'Video editing with CapCut for YouTube content creation.',
             level: 'Intermediate',
-            experience: '1+ year'
+            experience: '6+ months'
         },
         'deploy': {
             title: 'Deployment',
@@ -893,11 +970,11 @@ function initSkillModal() {
             experience: '1+ year'
         },
         'flutter': {
-            title: 'Flutter',
+            title: 'Flutter Development',
             icon: '📱',
             description: 'Mobile app development with Flutter framework.',
-            level: 'Beginner',
-            experience: '6+ months'
+            level: 'Intermediate',
+            experience: '2+ years'
         },
         'react': {
             title: 'React',
@@ -914,11 +991,11 @@ function initSkillModal() {
             experience: '1+ year'
         },
         'office': {
-            title: 'Microsoft Office',
+            title: 'Microsoft 365',
             icon: '📈',
             description: 'Office productivity suite including Word, Excel, and PowerPoint.',
-            level: 'Familiar',
-            experience: '3+ years'
+            level: 'Intermediate',
+            experience: '2+ years'
         }
     };
 
@@ -1041,6 +1118,9 @@ function showProjectModal(projectKey) {
         return;
     }
     
+    // Create floating particles for the modal
+    createModalParticles();
+    
     const modal = document.getElementById('project-modal');
     const title = document.getElementById('project-modal-title');
     const description = document.getElementById('project-modal-description');
@@ -1138,6 +1218,17 @@ function showProjectModal(projectKey) {
             });
         }
         
+        // Add zoom button functionality
+        const zoomBtn = document.getElementById('image-zoom-btn');
+        if (zoomBtn) {
+            zoomBtn.addEventListener('click', () => {
+                // Get current project images for navigation
+                const currentImageSrc = mainImage.src;
+                const currentIndex = projectImages.findIndex(img => img === currentImageSrc);
+                showFullscreenImage(currentImageSrc, mainImage.alt, projectImages, currentIndex >= 0 ? currentIndex : 0);
+            });
+        }
+        
         // Show modal with animation
         modal.classList.add('active');
         modal.setAttribute('aria-hidden', 'false');
@@ -1156,6 +1247,9 @@ function showProjectModal(projectKey) {
 function closeProjectModal() {
     const modal = document.getElementById('project-modal');
     if (modal) {
+        // Remove particles before closing
+        removeModalParticles();
+        
         modal.classList.remove('active');
         modal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = 'auto'; // Restore scrolling
@@ -1202,6 +1296,243 @@ function initSeamlessTechBanner() {
     
     // Recalculate on window resize
     window.addEventListener('resize', calculateDimensions);
+}
+
+// ===== Fullscreen Image Modal =====
+let currentImageIndex = 0;
+let currentImageArray = [];
+
+function initFullscreenImageModal() {
+    const fullscreenModal = document.getElementById('fullscreen-image-modal');
+    const closeBtn = document.querySelector('.fullscreen-close-btn');
+    const prevBtn = document.getElementById('fullscreen-prev-btn');
+    const nextBtn = document.getElementById('fullscreen-next-btn');
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeFullscreenImage);
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', showPreviousImage);
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', showNextImage);
+    }
+    
+    if (fullscreenModal) {
+        fullscreenModal.addEventListener('click', (e) => {
+            if (e.target === fullscreenModal) {
+                closeFullscreenImage();
+            }
+        });
+    }
+    
+    // Close with Escape key and navigation with arrow keys
+    document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('fullscreen-image-modal');
+        if (modal && modal.classList.contains('active')) {
+            if (e.key === 'Escape') {
+                closeFullscreenImage();
+            } else if (e.key === 'ArrowLeft') {
+                showPreviousImage();
+            } else if (e.key === 'ArrowRight') {
+                showNextImage();
+            }
+        }
+    });
+}
+
+function showFullscreenImage(imageSrc, imageAlt, imageArray = null, startIndex = 0) {
+    const modal = document.getElementById('fullscreen-image-modal');
+    const image = document.getElementById('fullscreen-image');
+    
+    if (modal && image) {
+        // Set up image array for navigation
+        if (imageArray && Array.isArray(imageArray)) {
+            currentImageArray = imageArray;
+            currentImageIndex = startIndex;
+        } else {
+            currentImageArray = [imageSrc];
+            currentImageIndex = 0;
+        }
+        
+        // Display current image
+        updateFullscreenImage();
+        
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        
+        // Focus on close button for accessibility
+        setTimeout(() => {
+            const closeBtn = modal.querySelector('.fullscreen-close-btn');
+            if (closeBtn) {
+                closeBtn.focus();
+            }
+        }, 100);
+    }
+}
+
+function updateFullscreenImage() {
+    const image = document.getElementById('fullscreen-image');
+    const counter = document.getElementById('fullscreen-image-counter');
+    const prevBtn = document.getElementById('fullscreen-prev-btn');
+    const nextBtn = document.getElementById('fullscreen-next-btn');
+    
+    if (image && currentImageArray.length > 0) {
+        const currentSrc = currentImageArray[currentImageIndex];
+        image.src = currentSrc;
+        image.alt = `تصویر ${currentImageIndex + 1}`;
+        
+        // Update counter
+        if (counter) {
+            counter.textContent = `${currentImageIndex + 1} / ${currentImageArray.length}`;
+        }
+        
+        // Update navigation buttons
+        if (prevBtn) {
+            prevBtn.disabled = currentImageIndex === 0;
+        }
+        if (nextBtn) {
+            nextBtn.disabled = currentImageIndex === currentImageArray.length - 1;
+        }
+        
+        // Hide navigation if only one image
+        if (currentImageArray.length <= 1) {
+            if (prevBtn) prevBtn.style.display = 'none';
+            if (nextBtn) nextBtn.style.display = 'none';
+        } else {
+            if (prevBtn) prevBtn.style.display = 'flex';
+            if (nextBtn) nextBtn.style.display = 'flex';
+        }
+    }
+}
+
+function showPreviousImage() {
+    if (currentImageIndex > 0) {
+        currentImageIndex--;
+        updateFullscreenImage();
+    }
+}
+
+function showNextImage() {
+    if (currentImageIndex < currentImageArray.length - 1) {
+        currentImageIndex++;
+        updateFullscreenImage();
+    }
+}
+
+function closeFullscreenImage() {
+    const modal = document.getElementById('fullscreen-image-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// ===== Modal Particle Effects =====
+function createModalParticles() {
+    const modal = document.getElementById('project-modal');
+    if (!modal) return;
+    
+    // Remove existing particles
+    const existingParticles = modal.querySelectorAll('.modal-particle');
+    existingParticles.forEach(particle => particle.remove());
+    
+    // Create new particles
+    for (let i = 0; i < 12; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'modal-particle';
+        particle.style.cssText = `
+            position: absolute;
+            width: ${Math.random() * 4 + 2}px;
+            height: ${Math.random() * 4 + 2}px;
+            background: ${i % 3 === 0 ? 'rgba(59, 130, 246, 0.6)' : 
+                        i % 3 === 1 ? 'rgba(139, 92, 246, 0.6)' : 
+                        'rgba(6, 182, 212, 0.6)'};
+            border-radius: 50%;
+            top: ${Math.random() * 100}%;
+            left: ${Math.random() * 100}%;
+            animation: modalParticleFloat ${5 + Math.random() * 5}s ease-in-out infinite;
+            animation-delay: ${Math.random() * 3}s;
+            opacity: 0.8;
+            z-index: 1;
+            pointer-events: none;
+            box-shadow: 0 0 10px currentColor;
+        `;
+        modal.appendChild(particle);
+    }
+    
+    // Add CSS animation if not already present
+    if (!document.getElementById('modal-particle-styles')) {
+        const style = document.createElement('style');
+        style.id = 'modal-particle-styles';
+        style.textContent = `
+            @keyframes modalParticleFloat {
+                0%, 100% { 
+                    transform: translateY(0px) translateX(0px) scale(1);
+                    opacity: 0.8;
+                }
+                25% { 
+                    transform: translateY(-20px) translateX(10px) scale(1.2);
+                    opacity: 1;
+                }
+                50% { 
+                    transform: translateY(-10px) translateX(-15px) scale(0.8);
+                    opacity: 0.6;
+                }
+                75% { 
+                    transform: translateY(-25px) translateX(5px) scale(1.1);
+                    opacity: 1;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+function removeModalParticles() {
+    const modal = document.getElementById('project-modal');
+    if (!modal) return;
+    
+    const particles = modal.querySelectorAll('.modal-particle');
+    particles.forEach(particle => {
+        particle.style.animation = 'none';
+        particle.style.opacity = '0';
+        setTimeout(() => particle.remove(), 300);
+    });
+}
+
+// ===== Enhanced Modal Interactions =====
+function addModalInteractiveEffects() {
+    const modal = document.getElementById('project-modal');
+    if (!modal) return;
+    
+    // Add mouse move effect for subtle parallax
+    modal.addEventListener('mousemove', (e) => {
+        const rect = modal.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width;
+        const y = (e.clientY - rect.top) / rect.height;
+        
+        const particles = modal.querySelectorAll('.modal-particle');
+        particles.forEach((particle, index) => {
+            const speed = (index % 3 + 1) * 0.5;
+            const moveX = (x - 0.5) * speed;
+            const moveY = (y - 0.5) * speed;
+            
+            particle.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    });
+    
+    // Reset on mouse leave
+    modal.addEventListener('mouseleave', () => {
+        const particles = modal.querySelectorAll('.modal-particle');
+        particles.forEach(particle => {
+            particle.style.transform = 'translate(0, 0)';
+        });
+    });
 }
 
 // ===== Start Application =====
