@@ -653,30 +653,8 @@ function initInteractiveSkills() {
     }
     
     function createHoverParticles() {
-        const particlesContainer = hoverCard.querySelector('.hover-card-particles');
-        if (!particlesContainer) return;
-        
-        // Clear existing particles
-        particlesContainer.innerHTML = '';
-        
-        // Create floating particles
-        for (let i = 0; i < 6; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'floating-particle';
-            particle.style.cssText = `
-                position: absolute;
-                width: 3px;
-                height: 3px;
-                background: ${i % 2 === 0 ? 'var(--primary-color)' : 'var(--secondary-color)'};
-                border-radius: 50%;
-                top: ${Math.random() * 80 + 10}%;
-                left: ${Math.random() * 80 + 10}%;
-                animation: particleFloat ${3 + Math.random() * 3}s ease-in-out infinite;
-                animation-delay: ${Math.random() * 2}s;
-                opacity: 0.7;
-            `;
-            particlesContainer.appendChild(particle);
-        }
+        // Simplified - no particles for better performance
+        return;
     }
 }
 
@@ -1432,107 +1410,21 @@ function closeFullscreenImage() {
     }
 }
 
-// ===== Modal Particle Effects =====
+// ===== Simplified Modal Effects =====
 function createModalParticles() {
-    const modal = document.getElementById('project-modal');
-    if (!modal) return;
-    
-    // Remove existing particles
-    const existingParticles = modal.querySelectorAll('.modal-particle');
-    existingParticles.forEach(particle => particle.remove());
-    
-    // Create new particles
-    for (let i = 0; i < 12; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'modal-particle';
-        particle.style.cssText = `
-            position: absolute;
-            width: ${Math.random() * 4 + 2}px;
-            height: ${Math.random() * 4 + 2}px;
-            background: ${i % 3 === 0 ? 'rgba(59, 130, 246, 0.6)' : 
-                        i % 3 === 1 ? 'rgba(139, 92, 246, 0.6)' : 
-                        'rgba(6, 182, 212, 0.6)'};
-            border-radius: 50%;
-            top: ${Math.random() * 100}%;
-            left: ${Math.random() * 100}%;
-            animation: modalParticleFloat ${5 + Math.random() * 5}s ease-in-out infinite;
-            animation-delay: ${Math.random() * 3}s;
-            opacity: 0.8;
-            z-index: 1;
-            pointer-events: none;
-            box-shadow: 0 0 10px currentColor;
-        `;
-        modal.appendChild(particle);
-    }
-    
-    // Add CSS animation if not already present
-    if (!document.getElementById('modal-particle-styles')) {
-        const style = document.createElement('style');
-        style.id = 'modal-particle-styles';
-        style.textContent = `
-            @keyframes modalParticleFloat {
-                0%, 100% { 
-                    transform: translateY(0px) translateX(0px) scale(1);
-                    opacity: 0.8;
-                }
-                25% { 
-                    transform: translateY(-20px) translateX(10px) scale(1.2);
-                    opacity: 1;
-                }
-                50% { 
-                    transform: translateY(-10px) translateX(-15px) scale(0.8);
-                    opacity: 0.6;
-                }
-                75% { 
-                    transform: translateY(-25px) translateX(5px) scale(1.1);
-                    opacity: 1;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-    }
+    // Simplified - no particles for better performance
+    return;
 }
 
 function removeModalParticles() {
-    const modal = document.getElementById('project-modal');
-    if (!modal) return;
-    
-    const particles = modal.querySelectorAll('.modal-particle');
-    particles.forEach(particle => {
-        particle.style.animation = 'none';
-        particle.style.opacity = '0';
-        setTimeout(() => particle.remove(), 300);
-    });
+    // Simplified - no particles to remove
+    return;
 }
 
-// ===== Enhanced Modal Interactions =====
+// ===== Simplified Modal Interactions =====
 function addModalInteractiveEffects() {
-    const modal = document.getElementById('project-modal');
-    if (!modal) return;
-    
-    // Add mouse move effect for subtle parallax
-    modal.addEventListener('mousemove', (e) => {
-        const rect = modal.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width;
-        const y = (e.clientY - rect.top) / rect.height;
-        
-        const particles = modal.querySelectorAll('.modal-particle');
-        particles.forEach((particle, index) => {
-            const speed = (index % 3 + 1) * 0.5;
-            const moveX = (x - 0.5) * speed;
-            const moveY = (y - 0.5) * speed;
-            
-            particle.style.transform = `translate(${moveX}px, ${moveY}px)`;
-        });
-    });
-    
-    // Reset on mouse leave
-    modal.addEventListener('mouseleave', () => {
-        const particles = modal.querySelectorAll('.modal-particle');
-        particles.forEach(particle => {
-            particle.style.transform = 'translate(0, 0)';
-        });
-    });
+    // Simplified - no complex interactions for better performance
+    return;
 }
 
 // ===== Start Application =====

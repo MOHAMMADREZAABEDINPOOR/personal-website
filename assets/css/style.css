@@ -182,33 +182,28 @@ body {
   transition: none;
 }
 
-/* Enhanced Element animations */
+/* Simplified Element animations */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(50px) scale(0.9) rotateX(15deg);
-  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-  filter: blur(2px);
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
 }
 
 .animate-on-scroll.scroll-in {
   opacity: 1;
-  transform: translateY(0) scale(1) rotateX(0deg);
-  filter: blur(0px);
+  transform: translateY(0);
 }
 
 /* Elements stay visible once animated */
 .animate-on-scroll.scroll-out {
   opacity: 1;
-  transform: translateY(0) scale(1) rotateX(0deg);
-  filter: blur(0px);
+  transform: translateY(0);
 }
 
-/* Staggered animations for multiple elements */
+/* Simplified staggered animations */
 .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
 .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
 .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
-.animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
-.animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
 .animate-on-scroll:nth-child(6) { transition-delay: 0.6s; }
 
 /* Remove hero scroll animations */
@@ -246,21 +241,21 @@ body {
   filter: blur(0px) brightness(1);
 }
 
-/* Text block animations */
+/* Simplified text block animations */
 .text-block {
-  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s ease;
 }
 
 .text-block.scroll-in {
-  transform: translateX(0) scale(1);
+  transform: translateX(0);
 }
 
 /* Text blocks stay visible once animated */
 .text-block.scroll-out {
-  transform: translateX(0) scale(1);
+  transform: translateX(0);
 }
 
-/* ===== ANIMATED BACKGROUND ===== */
+/* ===== SIMPLIFIED BACKGROUND WITH GRID ===== */
 .animated-background {
   position: fixed;
   top: 0;
@@ -269,194 +264,54 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
+  pointer-events: none;
+  background: linear-gradient(135deg, 
+    rgba(59, 130, 246, 0.03) 0%, 
+    rgba(139, 92, 246, 0.03) 50%, 
+    rgba(6, 182, 212, 0.03) 100%);
 }
 
-/* Responsive Beautiful Animated Background */
-.floating-particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: 
-    radial-gradient(circle at 20% 30%, rgba(159, 204, 250, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(9, 116, 241, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.08) 0%, transparent 50%);
-  animation: backgroundPulse 8s ease-in-out infinite;
-}
-
-.gradient-waves {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: 
-    linear-gradient(45deg, 
-      rgba(159, 204, 250, 0.1) 0%, 
-      rgba(9, 116, 241, 0.08) 25%, 
-      rgba(96, 165, 250, 0.06) 50%, 
-      rgba(159, 204, 250, 0.08) 75%, 
-      rgba(9, 116, 241, 0.1) 100%);
-  animation: waveFlow 20s linear infinite;
-}
-
-.geometric-shapes {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(159, 204, 250, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(9, 116, 241, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.03) 0%, transparent 50%);
-  animation: shapeFloat 15s ease-in-out infinite;
-}
-
-/* Responsive floating elements */
-.floating-orbs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.floating-orbs::before,
-.floating-orbs::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  background: hsla(210, 90%, 80%, 1);
-  background: linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-  background: -moz-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1);
-  opacity: 0.08;
-  animation: orbFloat 12s ease-in-out infinite;
-}
-
-.floating-orbs::before {
-  width: min(200px, 15vw);
-  height: min(200px, 15vw);
-  top: 15%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.floating-orbs::after {
-  width: min(150px, 12vw);
-  height: min(150px, 12vw);
-  top: 65%;
-  right: 20%;
-  animation-delay: 6s;
-}
-
-/* Responsive morphing shapes */
-.morphing-shapes {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.morphing-shapes::before,
-.morphing-shapes::after {
-  content: '';
-  position: absolute;
-  background: hsla(210, 90%, 80%, 1);
-  background: linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-  background: -moz-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9FCCFA", endColorstr="#0974F1", GradientType=1);
-  opacity: 0.06;
-  animation: morphShape 18s ease-in-out infinite;
-}
-
-.morphing-shapes::before {
-  width: min(300px, 20vw);
-  height: min(300px, 20vw);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  top: 20%;
-  right: 15%;
-  animation-delay: 0s;
-}
-
-.morphing-shapes::after {
-  width: min(250px, 18vw);
-  height: min(250px, 18vw);
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  bottom: 25%;
-  left: 15%;
-  animation-delay: 9s;
-}
-
-/* Responsive animated grid */
+/* Grid pattern background */
 .animated-grid {
   position: absolute;
   width: 100%;
   height: 100%;
   background-image: 
-    linear-gradient(rgba(159, 204, 250, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(9, 116, 241, 0.08) 1px, transparent 1px);
-  background-size: clamp(40px, 4vw, 80px) clamp(40px, 4vw, 80px);
-  animation: gridMove 30s linear infinite;
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
 }
 
-/* Beautiful Animation Keyframes */
-@keyframes backgroundPulse {
-  0%, 100% { 
-    opacity: 0.8; 
-    transform: scale(1); 
-  }
-  50% { 
-    opacity: 1; 
-    transform: scale(1.05); 
-  }
+/* Simplified floating particles - static gradients only */
+.floating-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
 }
 
-@keyframes waveFlow {
-  0% { 
-    transform: translateX(-50%) translateY(-50%) rotate(0deg); 
-  }
-  100% { 
-    transform: translateX(-50%) translateY(-50%) rotate(360deg); 
-  }
+/* Simple gradient waves - no animation */
+.gradient-waves {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(from 0deg at 50% 50%, 
+    rgba(59, 130, 246, 0.02) 0deg,
+    rgba(139, 92, 246, 0.02) 120deg,
+    rgba(6, 182, 212, 0.02) 240deg,
+    rgba(59, 130, 246, 0.02) 360deg);
 }
 
-@keyframes shapeFloat {
-  0%, 100% { 
-    transform: translateY(0px) rotate(0deg); 
-    opacity: 0.7; 
-  }
-  50% { 
-    transform: translateY(-15px) rotate(180deg); 
-    opacity: 1; 
-  }
+/* Remove other complex animated elements */
+.geometric-shapes,
+.floating-orbs,
+.morphing-shapes {
+  display: none;
 }
 
-@keyframes orbFloat {
-  0%, 100% { 
-    transform: translateY(0px) scale(1) rotate(0deg); 
-  }
-  33% { 
-    transform: translateY(-20px) scale(1.1) rotate(120deg); 
-  }
-  66% { 
-    transform: translateY(-10px) scale(0.9) rotate(240deg); 
-  }
-}
-
-@keyframes morphShape {
-  0%, 100% { 
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
-    transform: rotate(0deg) scale(1); 
-  }
-  25% { 
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
-    transform: rotate(90deg) scale(1.05); 
-  }
-  50% { 
-    border-radius: 70% 30% 60% 40% / 40% 60% 30% 70%; 
-    transform: rotate(180deg) scale(0.95); 
-  }
-  75% { 
-    border-radius: 40% 60% 70% 30% / 70% 40% 60% 30%; 
-    transform: rotate(270deg) scale(1.02); 
-  }
-}
+/* Remove unused animation keyframes for better performance */
 
 @keyframes gridMove {
   0% { 
@@ -5385,7 +5240,7 @@ html.ltr-text .project-modal-features li::before {
 .contact-details p {
   color: var(--text-secondary);
   margin: 0;
-  font-size: var(--text-sm);
+  font-size: 13px;
 }
 
 /* Contact link hover effects - Unique colors for each card */
@@ -7946,7 +7801,6 @@ html.ltr-text .project-modal-features li::before {
   }
 
   .hero-stats {
-    gap: var(--spacing-md);
     align-items: center;
   }
 
