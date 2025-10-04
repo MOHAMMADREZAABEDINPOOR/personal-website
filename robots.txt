@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap - محمدرضا عابدین پور
-Sitemap: https://mohammadrezaabedinpoor.github.io/sitemap.xml
+Sitemap: https://pimx.pages.dev/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
