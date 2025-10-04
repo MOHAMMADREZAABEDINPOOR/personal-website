@@ -1,51 +1,82 @@
 {
-  "name": "محمدرضا عابدین‌پور - رزومه",
-  "short_name": "رزومه م.ع",
-  "description": "رزومه آنلاین محمدرضا عابدین‌پور - دانش‌آموز پایه دوازدهم و علاقه‌مند به هوش مصنوعی و برنامه‌نویسی",
+  "name": "محمدرضا عابدین پور - برنامه‌نویس و متخصص هوش مصنوعی",
+  "short_name": "محمدرضا عابدین پور",
+  "description": "رزومه آنلاین محمدرضا عابدین پور - دانش‌آموز پایه دوازدهم، برنامه‌نویس Python و Django، متخصص هوش مصنوعی و توسعه تلگرام بات",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#6366f1",
   "orientation": "portrait-primary",
   "scope": "/",
-  "lang": "en",
-  "dir": "ltr",
-  "categories": ["education", "productivity", "utilities"],
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "categories": ["education", "productivity", "utilities", "developer", "portfolio"],
+  "keywords": ["محمدرضا عابدین پور", "Mohammadreza Abedinpoor", "برنامه‌نویس", "Python", "Django", "هوش مصنوعی", "تلگرام بات", "Web Development"],
   "icons": [
     {
       "src": "./assets/images/johnz.png",
-      "sizes": "any",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/johnz.png",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "./assets/images/1 (1).png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "پروژه چت‌بات هوشمند محمدرضا عابدین پور"
+    }
+  ],
   "shortcuts": [
     {
-      "name": "تماس",
+      "name": "تماس با محمدرضا عابدین پور",
       "short_name": "تماس",
-      "description": "ارسال پیام مستقیم",
+      "description": "ارسال پیام مستقیم به محمدرضا عابدین پور",
       "url": "/#contact",
       "icons": [
         {
-          "src": "./assets/images/logo1.png",
-          "sizes": "any"
+          "src": "./assets/images/johnz.png",
+          "sizes": "96x96"
         }
       ]
     },
     {
-      "name": "پروژه‌ها",
+      "name": "پروژه‌های محمدرضا عابدین پور",
       "short_name": "پروژه‌ها",
-      "description": "مشاهده پروژه‌های انجام شده",
+      "description": "مشاهده پروژه‌های برنامه‌نویسی محمدرضا عابدین پور",
       "url": "/#projects",
       "icons": [
         {
-          "src": "./assets/images/logo1.png",
-          "sizes": "any"
+          "src": "./assets/images/johnz.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "دانلود رزومه محمدرضا عابدین پور",
+      "short_name": "رزومه",
+      "description": "دانلود رزومه کامل محمدرضا عابدین پور",
+      "url": "/certificates/cv.pdf",
+      "icons": [
+        {
+          "src": "./assets/images/johnz.png",
+          "sizes": "96x96"
         }
       ]
     }
   ],
   "related_applications": [],
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay"],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
 }

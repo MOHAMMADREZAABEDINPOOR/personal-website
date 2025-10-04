@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://yourusername.github.io/sitemap.xml
+# Sitemap - محمدرضا عابدین پور
+Sitemap: https://mohammadrezaabedinpoor.github.io/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
@@ -28,4 +28,14 @@ User-agent: Baiduspider
 Allow: /
 
 User-agent: YandexBot
+Allow: /
+
+# Additional SEO directives
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
 Allow: /
