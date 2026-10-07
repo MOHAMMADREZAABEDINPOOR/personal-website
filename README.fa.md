@@ -1,35 +1,55 @@
 <div align="center">
 
-<img src="assets/readme/hero.gif" width="1200" alt="MOHAMMADREZA ABEDINPOOR — rotating 3D geometry" />
+<img src="assets/readme/hero.gif" width="1200" alt="MOHAMMADREZA ABEDINPOOR: a personal creative desk and profile display" />
 
 **[English](README.md) · [فارسی](README.fa.md)**
 
-<img src="assets/readme/identity.svg" width="1200" alt="web / English and Persian documentation" />
-
 </div>
 
-# MOHAMMADREZA ABEDINPOOR
+<div dir="rtl">
+
+# 👨‍💻 MOHAMMADREZA ABEDINPOOR
 
 وب‌سایت شخصی استاتیک با بخش پروژه‌ها، فایل گواهی‌ها، داده زبان‌ها، فراداده موتور جست‌وجو و Service Worker.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/personal-website) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [بنر ثابت](assets/readme/hero.png)
 
-## امکانات
+| نمای کلی | جزئیات |
+|:---|:---|
+| 👨‍💻 تجربه | برنامه وب / تجربه مرورگری |
+| 🧰 فناوری | `HTML / CSS / JavaScript` |
+| 🌐 زبان راهنما | [English](README.md) · [فارسی](README.fa.md) |
 
-- معرفی شخصی و نمایش پروژه‌ها
-- فایل گواهی و منابع زبان
-- Manifest، Service Worker و پایه نصب سایت
-- نقشه سایت، robots و راهنمای استقرار و سئو
+[✨ امکانات](#امکانات) · [🚀 شروع کار](#شروع-کار) · [⚙️ تنظیمات](#تنظیمات) · [🌍 استقرار](#استقرار)
 
-## پشته فنی
+---
+
+<a id="امکانات"></a>
+
+## ✨ امکانات
+
+| بخش | قابلیت موجود |
+|:---|:---|
+| ⚡ روند کار | معرفی شخصی و نمایش پروژه‌ها |
+| 🌐 تجربه کاربری | فایل گواهی و منابع زبان |
+| ⚡ روند کار | Manifest، Service Worker و پایه نصب سایت |
+| ⚡ روند کار | نقشه سایت، robots و راهنمای استقرار و سئو |
+
+<a id="پشته-فنی"></a>
+
+## 🧰 پشته فنی
 
 | ابزار | نسخه یا منبع |
 |---|---|
 | HTML / CSS / JavaScript | `static files` |
 
-## شروع کار
+<a id="شروع-کار"></a>
+
+## 🚀 شروع کار
 
 مرورگر جدید؛ Python فقط برای سرور HTTP محلی اختیاری است.
+
+<div dir="ltr">
 
 ```bash
 git clone https://github.com/MOHAMMADREZAABEDINPOOR/personal-website.git
@@ -38,15 +58,23 @@ cd personal-website
 python -m http.server 8000
 ```
 
-## تنظیمات
+</div>
+
+<a id="تنظیمات"></a>
+
+## ⚙️ تنظیمات
 
 فایل محیط استاندارد تعریف نشده است. برای تمرین‌های مستقل تنظیم خارجی لازم نیست؛ اگر در کد ثابت‌های سرویس یا مسیر وجود دارد، آن‌ها را پیش از اجرا بررسی کنید.
 
-## استفاده
+<a id="استفاده"></a>
+
+## 🎯 استفاده
 
 پوشه را با HTTP سرو و index.html را باز کنید. پس از تغییر محتوا فایل زبان، لینک شخصی و نقشه سایت را به‌روز کنید.
 
-## ساختار پروژه
+<a id="ساختار-پروژه"></a>
+
+## 🗂️ ساختار پروژه
 
 | مسیر | نقش |
 |---|---|
@@ -55,25 +83,35 @@ python -m http.server 8000
 | [`index.html`](index.html) | فایل ورودی یا تنظیم پروژه |
 | [`manifest.json`](manifest.json) | فایل ورودی یا تنظیم پروژه |
 
-## فرمان‌ها و بررسی
+<a id="فرمان‌ها-و-بررسی"></a>
+
+## 🧪 فرمان‌ها و بررسی
 
 فرمان آزمون خودکار در manifest تعریف نشده است. اجرای محلی و بررسی رفتار نمونه را انجام دهید.
 
-## استقرار
+<a id="استقرار"></a>
+
+## 🌍 استقرار
 
 پوشه را روی میزبان استاتیک دارای HTTPS منتشر کنید؛ مسیر فایل و لینک‌های بیرونی را بررسی کنید.
 
-## محدودیت‌ها
+<a id="محدودیت‌ها"></a>
+
+## 📌 محدودیت‌ها
 
 کش Service Worker ممکن است فایل قدیمی را نگه دارد؛ هنگام توسعه داده سایت را پاک کنید. حقوق گواهی و فایل‌های برند متعلق به صاحبانشان است.
 
-## رفع مشکل
+<a id="رفع-مشکل"></a>
+
+## 🛠️ رفع مشکل
 
 - پکیج غایب: وابستگی را با مدیر پکیج پروژه نصب کنید.
 - خطای API یا شبکه: آدرس، سرویس و اتصال میزبانی را بررسی کنید.
 - فایل قدیمی: در صورت وجود اسکریپت ساخت، build و کش مرورگر را تازه کنید.
 
-## مشارکت
+<a id="مشارکت"></a>
+
+## 🤝 مشارکت
 
 برای تغییر، شاخه مستقل بسازید، رفتار فعلی را بررسی کنید و توضیح روشن همراه تغییر بفرستید. اطلاعات خصوصی، خروجی build و دیتابیس محلی را commit نکنید.
 
@@ -81,10 +119,22 @@ python -m http.server 8000
 
 - [DEPLOYMENT.md](DEPLOYMENT.md)
 
-## مجوز
+<a id="مجوز"></a>
+
+## 📄 مجوز
 
 متن مجوز در فایل زیر است؛ حقوق منابع و وابستگی‌های شخص ثالث ممکن است متفاوت باشد: [LICENSE](LICENSE).
 
 ---
 
 ساخته‌شده در مجموعه **PIMX** · مستندات فارسی و انگلیسی.
+
+---
+
+<div align="center">
+
+👨‍💻 **MOHAMMADREZA ABEDINPOOR** · [English](README.md) · [فارسی](README.fa.md)
+
+</div>
+
+</div>
